@@ -1,0 +1,1333 @@
+# depslib dependency file v1.0
+1429534608 source:d:\documents\cpp\opengl\tchoutchou\src\api\carc.cpp
+	"CArc.h"
+	<string>
+	<stdio.h>
+
+1429534608 d:\documents\cpp\opengl\tchoutchou\src\api\carc.h
+	<vector>
+	<string>
+
+1341013976 c:\program files (x86)\codeblocks\mingw\include\stdio.h
+	<_mingw.h>
+	<stddef.h>
+	<stdarg.h>
+	<sys/types.h>
+
+1341013970 c:\program files (x86)\codeblocks\mingw\include\_mingw.h
+
+1341013980 c:\program files (x86)\codeblocks\mingw\include\sys\types.h
+	<_mingw.h>
+	<stddef.h>
+
+1429534608 source:d:\documents\cpp\opengl\tchoutchou\src\api\cdata2i.cpp
+	"CData2i.h"
+	"consts.h"
+
+1429534608 d:\documents\cpp\opengl\tchoutchou\src\api\cdata2i.h
+
+1429534610 d:\documents\cpp\opengl\tchoutchou\src\api\consts.h
+
+1429534608 source:d:\documents\cpp\opengl\tchoutchou\src\api\cdonneesgraphe.cpp
+	"consts.h"
+	"CDonneesGraphe.h"
+	<fstream>
+	<iostream>
+	<sstream>
+
+1429534608 d:\documents\cpp\opengl\tchoutchou\src\api\cdonneesgraphe.h
+	<vector>
+	<string.h>
+	"CData2i.h"
+	"CPoint3f.h"
+
+1341013976 c:\program files (x86)\codeblocks\mingw\include\string.h
+	<_mingw.h>
+	<stddef.h>
+
+1429721295 d:\documents\cpp\opengl\tchoutchou\src\api\cpoint3f.h
+	<string>
+	<ctgmath>
+
+1429534610 source:d:\documents\cpp\opengl\tchoutchou\src\api\cgraphe.cpp
+	"CGraphe.h"
+	<iostream>
+	<string>
+
+1429534610 d:\documents\cpp\opengl\tchoutchou\src\api\cgraphe.h
+	<vector>
+	<string>
+	"CSegment.h"
+	"CArc.h"
+	"CSommet.h"
+	"CPointAnnexe.h"
+	"CDonneesGraphe.h"
+	"consts.h"
+
+1429534610 d:\documents\cpp\opengl\tchoutchou\src\api\csegment.h
+
+1429534610 d:\documents\cpp\opengl\tchoutchou\src\api\csommet.h
+	<vector>
+	<string>
+	"CPoint3f.h"
+
+1429534610 d:\documents\cpp\opengl\tchoutchou\src\api\cpointannexe.h
+	"CPoint3f.h"
+
+1429721273 source:d:\documents\cpp\opengl\tchoutchou\src\api\cpoint3f.cpp
+	"CPoint3f.h"
+	"consts.h"
+	<stdio.h>
+
+1429534610 source:d:\documents\cpp\opengl\tchoutchou\src\api\cpointannexe.cpp
+	"CPointAnnexe.h"
+	<stdio.h>
+
+1429534610 source:d:\documents\cpp\opengl\tchoutchou\src\api\csegment.cpp
+	"CSegment.h"
+
+1429534610 source:d:\documents\cpp\opengl\tchoutchou\src\api\csommet.cpp
+	"CSommet.h"
+	"consts.h"
+	<stdio.h>
+	<algorithm>
+
+1429651064 source:d:\documents\cpp\opengl\tchoutchou\src\camera.cpp
+	"Camera.h"
+	<cmath>
+	<iostream>
+
+1429642287 d:\documents\cpp\opengl\tchoutchou\src\camera.h
+	"vecteur.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1429656283 d:\documents\cpp\opengl\tchoutchou\src\vecteur.h
+	"API/CPoint3f.h"
+
+1301114764 c:\program files (x86)\codeblocks\mingw\include\gl\gl.h
+
+1301114764 c:\program files (x86)\codeblocks\mingw\include\gl\glu.h
+	<stddef.h>
+	<GL/gl.h>
+
+976695772 c:\program files (x86)\codeblocks\mingw\include\gl\glut.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glu.h>
+
+1301114762 c:\program files (x86)\codeblocks\mingw\include\windows.h
+	<winresrc.h>
+	<stdarg.h>
+	<windef.h>
+	<wincon.h>
+	<winbase.h>
+	<wingdi.h>
+	<winuser.h>
+	<winnls.h>
+	<winver.h>
+	<winnetwk.h>
+	<winreg.h>
+	<winsvc.h>
+	<cderr.h>
+	<dde.h>
+	<ddeml.h>
+	<dlgs.h>
+	<imm.h>
+	<lzexpand.h>
+	<mmsystem.h>
+	<nb30.h>
+	<rpc.h>
+	<shellapi.h>
+	<winperf.h>
+	<commdlg.h>
+	<winspool.h>
+	<winsock2.h>
+	<winsock.h>
+	<ole2.h>
+
+1301114762 c:\program files (x86)\codeblocks\mingw\include\winresrc.h
+	<winuser.h>
+	<winnt.h>
+	<winver.h>
+	<dde.h>
+	<dlgs.h>
+	<commctrl.h>
+
+1301114764 c:\program files (x86)\codeblocks\mingw\include\winuser.h
+
+1301114762 c:\program files (x86)\codeblocks\mingw\include\winnt.h
+	<winerror.h>
+	<string.h>
+	<basetsd.h>
+	<pshpack4.h>
+	<poppack.h>
+
+1301114762 c:\program files (x86)\codeblocks\mingw\include\winerror.h
+
+1301114748 c:\program files (x86)\codeblocks\mingw\include\basetsd.h
+
+1301114756 c:\program files (x86)\codeblocks\mingw\include\pshpack4.h
+
+1301114756 c:\program files (x86)\codeblocks\mingw\include\poppack.h
+
+1301114764 c:\program files (x86)\codeblocks\mingw\include\winver.h
+
+1301114748 c:\program files (x86)\codeblocks\mingw\include\dde.h
+
+1301114750 c:\program files (x86)\codeblocks\mingw\include\dlgs.h
+
+1301114748 c:\program files (x86)\codeblocks\mingw\include\commctrl.h
+	<prsht.h>
+
+1301114756 c:\program files (x86)\codeblocks\mingw\include\prsht.h
+
+1301114762 c:\program files (x86)\codeblocks\mingw\include\windef.h
+	<winnt.h>
+
+1301114762 c:\program files (x86)\codeblocks\mingw\include\wincon.h
+
+1301114760 c:\program files (x86)\codeblocks\mingw\include\winbase.h
+
+1301114762 c:\program files (x86)\codeblocks\mingw\include\wingdi.h
+
+1301114762 c:\program files (x86)\codeblocks\mingw\include\winnls.h
+
+1301114762 c:\program files (x86)\codeblocks\mingw\include\winnetwk.h
+
+1301114762 c:\program files (x86)\codeblocks\mingw\include\winreg.h
+
+1301114764 c:\program files (x86)\codeblocks\mingw\include\winsvc.h
+
+1301114748 c:\program files (x86)\codeblocks\mingw\include\cderr.h
+
+1301114748 c:\program files (x86)\codeblocks\mingw\include\ddeml.h
+
+1301114750 c:\program files (x86)\codeblocks\mingw\include\imm.h
+
+1301114754 c:\program files (x86)\codeblocks\mingw\include\lzexpand.h
+
+1301114754 c:\program files (x86)\codeblocks\mingw\include\mmsystem.h
+
+1301114754 c:\program files (x86)\codeblocks\mingw\include\nb30.h
+
+1301114758 c:\program files (x86)\codeblocks\mingw\include\rpc.h
+	<windows.h>
+	<rpcdce.h>
+	<rpcnsi.h>
+	<rpcnterr.h>
+	<winerror.h>
+	<excpt.h>
+
+1301114758 c:\program files (x86)\codeblocks\mingw\include\rpcdce.h
+	<basetyps.h>
+	<rpcdcep.h>
+
+1301114748 c:\program files (x86)\codeblocks\mingw\include\basetyps.h
+
+1301114758 c:\program files (x86)\codeblocks\mingw\include\rpcdcep.h
+
+1301114758 c:\program files (x86)\codeblocks\mingw\include\rpcnsi.h
+
+1301114758 c:\program files (x86)\codeblocks\mingw\include\rpcnterr.h
+
+1341013972 c:\program files (x86)\codeblocks\mingw\include\excpt.h
+	<_mingw.h>
+	<windef.h>
+
+1301114760 c:\program files (x86)\codeblocks\mingw\include\shellapi.h
+	<pshpack2.h>
+	<poppack.h>
+
+1301114756 c:\program files (x86)\codeblocks\mingw\include\pshpack2.h
+
+1301114762 c:\program files (x86)\codeblocks\mingw\include\winperf.h
+
+1301114748 c:\program files (x86)\codeblocks\mingw\include\commdlg.h
+	<unknwn.h>
+	<prsht.h>
+
+1301114760 c:\program files (x86)\codeblocks\mingw\include\unknwn.h
+	<windows.h>
+	<objfwd.h>
+	<wtypes.h>
+
+1301114756 c:\program files (x86)\codeblocks\mingw\include\objfwd.h
+	<basetyps.h>
+
+1301114764 c:\program files (x86)\codeblocks\mingw\include\wtypes.h
+	<rpc.h>
+	<rpcndr.h>
+
+1301114758 c:\program files (x86)\codeblocks\mingw\include\rpcndr.h
+	<rpcnsip.h>
+	<objfwd.h>
+
+1301114758 c:\program files (x86)\codeblocks\mingw\include\rpcnsip.h
+
+1301114762 c:\program files (x86)\codeblocks\mingw\include\winspool.h
+
+1301114762 c:\program files (x86)\codeblocks\mingw\include\winsock2.h
+	<windows.h>
+
+1301114762 c:\program files (x86)\codeblocks\mingw\include\winsock.h
+	<windows.h>
+	<mswsock.h>
+
+1301114754 c:\program files (x86)\codeblocks\mingw\include\mswsock.h
+
+1301114756 c:\program files (x86)\codeblocks\mingw\include\ole2.h
+	<winerror.h>
+	<objbase.h>
+	<olectlid.h>
+	<oleauto.h>
+	<oleidl.h>
+
+1301114754 c:\program files (x86)\codeblocks\mingw\include\objbase.h
+	<rpc.h>
+	<rpcndr.h>
+	<stdlib.h>
+	<basetyps.h>
+	<wtypes.h>
+	<unknwn.h>
+	<objidl.h>
+	<cguid.h>
+
+1341013976 c:\program files (x86)\codeblocks\mingw\include\stdlib.h
+	<_mingw.h>
+	<stddef.h>
+
+1301114756 c:\program files (x86)\codeblocks\mingw\include\objidl.h
+	<objfwd.h>
+
+1301114748 c:\program files (x86)\codeblocks\mingw\include\cguid.h
+
+1301114756 c:\program files (x86)\codeblocks\mingw\include\olectlid.h
+
+1301114756 c:\program files (x86)\codeblocks\mingw\include\oleauto.h
+	<oaidl.h>
+
+1301114754 c:\program files (x86)\codeblocks\mingw\include\oaidl.h
+	<windows.h>
+	<ole2.h>
+
+1301114756 c:\program files (x86)\codeblocks\mingw\include\oleidl.h
+	<objfwd.h>
+
+1429642484 source:d:\documents\cpp\opengl\tchoutchou\src\collection.cpp
+	"Collection.h"
+	<cmath>
+	<iostream>
+
+1429651245 d:\documents\cpp\opengl\tchoutchou\src\collection.h
+	<vector>
+	"train.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1429554204 d:\documents\cpp\opengl\tchoutchou\src\train.h
+	<vector>
+	"API/CDonneesGraphe.h"
+	"API/CGraphe.h"
+	"API/CSommet.h"
+	"wagon.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1431680180 d:\documents\cpp\opengl\tchoutchou\src\wagon.h
+	"API/CDonneesGraphe.h"
+	"API/CGraphe.h"
+	"API/CSommet.h"
+	"vecteur.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1431688887 source:d:\documents\cpp\opengl\tchoutchou\src\graphic.cpp
+	"graphic.h"
+	"Class/Arbre.cpp"
+
+1431680592 d:\documents\cpp\opengl\tchoutchou\src\graphic.h
+	<iostream>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	"API/CDonneesGraphe.h"
+	"API/CGraphe.h"
+	"API/CSommet.h"
+	<vector>
+	<time.h>
+	<stdlib.h>
+	<math.h>
+	<fstream>
+	"windows.h"
+	"Librairies/sdlglutils.h"
+	"Class/wagon.h"
+	"Class/train.h"
+	"Class/Collection.h"
+	"Class/Camera.h"
+	"Class/vecteur.h"
+	"globales.h"
+
+1341013976 c:\program files (x86)\codeblocks\mingw\include\time.h
+	<_mingw.h>
+	<stddef.h>
+
+1341013974 c:\program files (x86)\codeblocks\mingw\include\math.h
+	<_mingw.h>
+
+1147265384 d:\documents\cpp\opengl\tchoutchou\src\sdlglutils.h
+	<GL/gl.h>
+	<SDL/SDL.h>
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_audio.h"
+	"SDL_cdrom.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_loadso.h"
+	"SDL_mutex.h"
+	"SDL_rwops.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_video.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1326114587 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_config.h
+	"SDL_platform.h"
+	"SDL_config_dreamcast.h"
+	"SDL_config_macos.h"
+	"SDL_config_macosx.h"
+	"SDL_config_symbian.h"
+	"SDL_config_win32.h"
+	"SDL_config_os2.h"
+	"SDL_config_minimal.h"
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_platform.h
+
+1326114594 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_config_win32.h
+	"SDL_platform.h"
+
+1341013974 c:\program files (x86)\codeblocks\mingw\include\malloc.h
+	<_mingw.h>
+	<stdlib.h>
+
+1341013974 c:\program files (x86)\codeblocks\mingw\include\memory.h
+	<string.h>
+
+1341013976 c:\program files (x86)\codeblocks\mingw\include\strings.h
+	<string.h>
+
+1341013972 c:\program files (x86)\codeblocks\mingw\include\inttypes.h
+	<_mingw.h>
+	<stdint.h>
+	<stddef.h>
+
+1341013976 c:\program files (x86)\codeblocks\mingw\include\stdint.h
+	<stddef.h>
+
+1341013970 c:\program files (x86)\codeblocks\mingw\include\ctype.h
+	<_mingw.h>
+	<stddef.h>
+
+1326114600 c:\program files (x86)\codeblocks\mingw\include\sdl\begin_code.h
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\close_code.h
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1341013974 c:\program files (x86)\codeblocks\mingw\include\process.h
+	<_mingw.h>
+	<sys/types.h>
+	<stdint.h>
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_cdrom.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_active.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_quit.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_active.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keysym.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_keysym.h
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325742239 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1431680598 d:\documents\cpp\opengl\tchoutchou\src\globales.h
+	"Class/Triangulation.h"
+
+1430126494 d:\documents\cpp\opengl\tchoutchou\src\triangulation.h
+	<vector>
+	"Triangle.h"
+	<algorithm>
+	<fstream>
+	<iostream>
+	<sstream>
+	<windows.h>
+
+1430139115 d:\documents\cpp\opengl\tchoutchou\src\triangle.h
+	"windows.h"
+	"API/CPoint3f.h"
+	"vecteur.h"
+	<vector>
+	<ctgmath>
+	"utilitaires.h"
+
+1431680544 d:\documents\cpp\opengl\tchoutchou\src\utilitaires.h
+	<iostream>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<vector>
+	<time.h>
+	<stdlib.h>
+	<math.h>
+	<fstream>
+	<iostream>
+	<sstream>
+	"API/CDonneesGraphe.h"
+	"API/CGraphe.h"
+	"API/CSommet.h"
+	"Librairies/sdlglutils.h"
+	"Class/wagon.h"
+	"Class/train.h"
+	"Class/vecteur.h"
+	"Class/Camera.h"
+
+1431680647 source:d:\documents\cpp\opengl\tchoutchou\src\main.cpp
+	<iostream>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<vector>
+	<time.h>
+	<stdlib.h>
+	<math.h>
+	<fstream>
+	"graphic.h"
+	"API/CDonneesGraphe.h"
+	"API/CGraphe.h"
+	"API/CSommet.h"
+	"Librairies/sdlglutils.h"
+	"Class/Camera.h"
+	"Class/vecteur.h"
+	"Class/Triangle.h"
+	"Class/Triangulation.h"
+	"Class/wagon.h"
+	"Class/train.h"
+	"Class/Collection.h"
+	"utilitaires.h"
+	"globales.h"
+
+1147355034 source:d:\documents\cpp\opengl\tchoutchou\src\sdlglutils.cpp
+	"sdlglutils.h"
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<GL/glu.h>
+	<cstring>
+	<cstdlib>
+
+1325814033 c:\program files (x86)\codeblocks\mingw\include\sdl\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1431678280 source:d:\documents\cpp\opengl\tchoutchou\src\train.cpp
+	"train.h"
+	<iostream>
+
+1430139257 source:d:\documents\cpp\opengl\tchoutchou\src\triangle.cpp
+	"Triangle.h"
+
+1430126505 source:d:\documents\cpp\opengl\tchoutchou\src\triangulation.cpp
+	"Triangulation.h"
+
+1429729471 source:d:\documents\cpp\opengl\tchoutchou\src\utilitaires.cpp
+	"utilitaires.h"
+
+1429656329 source:d:\documents\cpp\opengl\tchoutchou\src\vecteur.cpp
+	"vecteur.h"
+	<cmath>
+
+1429634211 source:d:\documents\cpp\opengl\tchoutchou\src\wagon.cpp
+	"wagon.h"
+	"vecteur.h"
+	<time.h>
+	<stdlib.h>
+	<cmath>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<iostream>
+	"graphic.h"
+
+1429651064 source:d:\documents\cpp\opengl\tchoutchou\src\class\camera.cpp
+	"Camera.h"
+	<cmath>
+	<iostream>
+
+1429642287 d:\documents\cpp\opengl\tchoutchou\src\class\camera.h
+	"vecteur.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1431680454 d:\documents\cpp\opengl\tchoutchou\src\class\vecteur.h
+	"../API/CPoint3f.h"
+
+1429642484 source:d:\documents\cpp\opengl\tchoutchou\src\class\collection.cpp
+	"Collection.h"
+	<cmath>
+	<iostream>
+
+1429651245 d:\documents\cpp\opengl\tchoutchou\src\class\collection.h
+	<vector>
+	"train.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1431680463 d:\documents\cpp\opengl\tchoutchou\src\class\train.h
+	<vector>
+	"../API/CDonneesGraphe.h"
+	"../API/CGraphe.h"
+	"../API/CSommet.h"
+	"wagon.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1431680467 d:\documents\cpp\opengl\tchoutchou\src\class\wagon.h
+	"../API/CDonneesGraphe.h"
+	"../API/CGraphe.h"
+	"../API/CSommet.h"
+	"vecteur.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1431678280 source:d:\documents\cpp\opengl\tchoutchou\src\class\train.cpp
+	"train.h"
+	<iostream>
+
+1147265384 d:\documents\cpp\opengl\tchoutchou\src\librairies\sdlglutils.h
+	<GL/gl.h>
+	<SDL/SDL.h>
+
+1430139257 source:d:\documents\cpp\opengl\tchoutchou\src\class\triangle.cpp
+	"Triangle.h"
+
+1431680474 d:\documents\cpp\opengl\tchoutchou\src\class\triangle.h
+	"windows.h"
+	"../API/CPoint3f.h"
+	"vecteur.h"
+	<vector>
+	<ctgmath>
+	"../utilitaires.h"
+
+1430126505 source:d:\documents\cpp\opengl\tchoutchou\src\class\triangulation.cpp
+	"Triangulation.h"
+
+1430126494 d:\documents\cpp\opengl\tchoutchou\src\class\triangulation.h
+	<vector>
+	"Triangle.h"
+	<algorithm>
+	<fstream>
+	<iostream>
+	<sstream>
+	<windows.h>
+
+1429656329 source:d:\documents\cpp\opengl\tchoutchou\src\class\vecteur.cpp
+	"vecteur.h"
+	<cmath>
+
+1431680551 source:d:\documents\cpp\opengl\tchoutchou\src\class\wagon.cpp
+	"wagon.h"
+	"vecteur.h"
+	<time.h>
+	<stdlib.h>
+	<cmath>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<iostream>
+	"../graphic.h"
+
+1147355034 source:d:\documents\cpp\opengl\tchoutchou\src\librairies\sdlglutils.cpp
+	"sdlglutils.h"
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<GL/glu.h>
+	<cstring>
+	<cstdlib>
+
+1431689021 source:d:\documents\cpp\opengl\tchoutchou\src\class\arbre.cpp
+	<stdio.h>
+	<math.h>
+	<iostream>
+	<GL/glut.h>
+
+1431689009 d:\documents\cpp\opengl\tchoutchou\src\class\arbre.h
+
+1431689021 d:\documents\cpp\opengl\tchoutchou\src\class\arbre.cpp
+	<stdio.h>
+	<math.h>
+	<iostream>
+	<GL/glut.h>
+
+1431690490 source:d:\documents\cpp\opengl\src\src\api\carc.cpp
+	"../../Include/API/CArc.h"
+	<string>
+	<stdio.h>
+
+1431690501 source:d:\documents\cpp\opengl\src\src\api\cdata2i.cpp
+	"../../Include/API/CData2i.h"
+	"../../Include/API/consts.h"
+
+1431690504 source:d:\documents\cpp\opengl\src\src\api\cdonneesgraphe.cpp
+	"../../Include/API/consts.h"
+	"../../Include/API/CDonneesGraphe.h"
+	<fstream>
+	<iostream>
+	<sstream>
+
+1431690508 source:d:\documents\cpp\opengl\src\src\api\cgraphe.cpp
+	"../../Include/API/CGraphe.h"
+	<iostream>
+	<string>
+
+1431690512 source:d:\documents\cpp\opengl\src\src\api\cpoint3f.cpp
+	"../../Include/API/CPoint3f.h"
+	"../../Include/API/consts.h"
+	<stdio.h>
+
+1431690515 source:d:\documents\cpp\opengl\src\src\api\cpointannexe.cpp
+	"../../Include/API/CPointAnnexe.h"
+	<stdio.h>
+
+1431690517 source:d:\documents\cpp\opengl\src\src\api\csegment.cpp
+	"../../Include/API/CSegment.h"
+
+1431690521 source:d:\documents\cpp\opengl\src\src\api\csommet.cpp
+	"../../Include/API/CSommet.h"
+	"../../Include/API/consts.h"
+	<stdio.h>
+	<algorithm>
+
+1431690563 source:d:\documents\cpp\opengl\src\src\class\camera.cpp
+	"../../include/Class/Camera.h"
+	<cmath>
+	<iostream>
+
+1431690569 source:d:\documents\cpp\opengl\src\src\class\collection.cpp
+	"../../Include/Class/Collection.h"
+	<cmath>
+	<iostream>
+
+1431690590 source:d:\documents\cpp\opengl\src\src\class\train.cpp
+	"../../Include/Class/train.h"
+	<iostream>
+
+1431690596 source:d:\documents\cpp\opengl\src\src\class\triangle.cpp
+	"../../Include/Class/Triangle.h"
+
+1431690601 source:d:\documents\cpp\opengl\src\src\class\triangulation.cpp
+	"../../Include/Class/Triangulation.h"
+
+1431690607 source:d:\documents\cpp\opengl\src\src\class\vecteur.cpp
+	"../../Include/Class/vecteur.h"
+	<cmath>
+
+1431693652 source:d:\documents\cpp\opengl\src\src\class\wagon.cpp
+	<time.h>
+	<stdlib.h>
+	<cmath>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<iostream>
+	"../../include/graphic.h"
+	"../../Include/Class/wagon.h"
+	"../../Include/Class/vecteur.h"
+
+1431690672 source:d:\documents\cpp\opengl\src\src\librairies\sdlglutils.cpp
+	"../../include/Librairies/sdlglutils.h"
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<GL/glu.h>
+	<cstring>
+	<cstdlib>
+
+1431692256 source:d:\documents\cpp\opengl\src\src\main.cpp
+	<iostream>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<vector>
+	<time.h>
+	<stdlib.h>
+	<math.h>
+	<fstream>
+	"graphic.h"
+	"API/CDonneesGraphe.h"
+	"API/CGraphe.h"
+	"API/CSommet.h"
+	"Librairies/sdlglutils.h"
+	"Class/Camera.h"
+	"Class/vecteur.h"
+	"Class/Triangle.h"
+	"Class/Triangulation.h"
+	"Class/wagon.h"
+	"Class/train.h"
+	"Class/Collection.h"
+	"utilitaires.h"
+	"globales.h"
+
+1431691288 d:\documents\cpp\opengl\src\include\graphic.h
+	<iostream>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	"API/CDonneesGraphe.h"
+	"API/CGraphe.h"
+	"API/CSommet.h"
+	<vector>
+	<time.h>
+	<stdlib.h>
+	<math.h>
+	<fstream>
+	"windows.h"
+	"Librairies/sdlglutils.h"
+	"Class/wagon.h"
+	"Class/train.h"
+	"Class/Collection.h"
+	"Class/Camera.h"
+	"Class/vecteur.h"
+	"globales.h"
+
+1429534608 d:\documents\cpp\opengl\src\include\api\cdonneesgraphe.h
+	<vector>
+	<string.h>
+	"CData2i.h"
+	"CPoint3f.h"
+
+1429534608 d:\documents\cpp\opengl\src\include\api\cdata2i.h
+
+1429721295 d:\documents\cpp\opengl\src\include\api\cpoint3f.h
+	<string>
+	<ctgmath>
+
+1429534610 d:\documents\cpp\opengl\src\include\api\cgraphe.h
+	<vector>
+	<string>
+	"CSegment.h"
+	"CArc.h"
+	"CSommet.h"
+	"CPointAnnexe.h"
+	"CDonneesGraphe.h"
+	"consts.h"
+
+1429534610 d:\documents\cpp\opengl\src\include\api\csegment.h
+
+1429534608 d:\documents\cpp\opengl\src\include\api\carc.h
+	<vector>
+	<string>
+
+1429534610 d:\documents\cpp\opengl\src\include\api\csommet.h
+	<vector>
+	<string>
+	"CPoint3f.h"
+
+1429534610 d:\documents\cpp\opengl\src\include\api\cpointannexe.h
+	"CPoint3f.h"
+
+1429534610 d:\documents\cpp\opengl\src\include\api\consts.h
+
+1147265384 d:\documents\cpp\opengl\src\include\librairies\sdlglutils.h
+	<GL/gl.h>
+	<SDL/SDL.h>
+
+1431680467 d:\documents\cpp\opengl\src\include\class\wagon.h
+	"../API/CDonneesGraphe.h"
+	"../API/CGraphe.h"
+	"../API/CSommet.h"
+	"vecteur.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1431680454 d:\documents\cpp\opengl\src\include\class\vecteur.h
+	"../API/CPoint3f.h"
+
+1431680463 d:\documents\cpp\opengl\src\include\class\train.h
+	<vector>
+	"../API/CDonneesGraphe.h"
+	"../API/CGraphe.h"
+	"../API/CSommet.h"
+	"wagon.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1429651245 d:\documents\cpp\opengl\src\include\class\collection.h
+	<vector>
+	"train.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1429642287 d:\documents\cpp\opengl\src\include\class\camera.h
+	"vecteur.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1431680598 d:\documents\cpp\opengl\src\include\globales.h
+	"Class/Triangulation.h"
+
+1430126494 d:\documents\cpp\opengl\src\include\class\triangulation.h
+	<vector>
+	"Triangle.h"
+	<algorithm>
+	<fstream>
+	<iostream>
+	<sstream>
+	<windows.h>
+
+1431680474 d:\documents\cpp\opengl\src\include\class\triangle.h
+	"windows.h"
+	"../API/CPoint3f.h"
+	"vecteur.h"
+	<vector>
+	<ctgmath>
+	"../utilitaires.h"
+
+1431680544 d:\documents\cpp\opengl\src\include\utilitaires.h
+	<iostream>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<vector>
+	<time.h>
+	<stdlib.h>
+	<math.h>
+	<fstream>
+	<iostream>
+	<sstream>
+	"API/CDonneesGraphe.h"
+	"API/CGraphe.h"
+	"API/CSommet.h"
+	"Librairies/sdlglutils.h"
+	"Class/wagon.h"
+	"Class/train.h"
+	"Class/vecteur.h"
+	"Class/Camera.h"
+
+1429729471 source:d:\documents\cpp\opengl\src\src\utilitaires.cpp
+	"utilitaires.h"
+
+1431691620 source:d:\documents\cpp\opengl\src\src\graphic.cpp
+	"graphic.h"
+
+1431690490 source:d:\documents\cpp\sasyan_lalanne_koehl\src\src\api\carc.cpp
+	"../../Include/API/CArc.h"
+	<string>
+	<stdio.h>
+
+1429534608 d:\documents\cpp\sasyan_lalanne_koehl\src\include\api\carc.h
+	<vector>
+	<string>
+
+1431690501 source:d:\documents\cpp\sasyan_lalanne_koehl\src\src\api\cdata2i.cpp
+	"../../Include/API/CData2i.h"
+	"../../Include/API/consts.h"
+
+1429534608 d:\documents\cpp\sasyan_lalanne_koehl\src\include\api\cdata2i.h
+
+1429534610 d:\documents\cpp\sasyan_lalanne_koehl\src\include\api\consts.h
+
+1431690504 source:d:\documents\cpp\sasyan_lalanne_koehl\src\src\api\cdonneesgraphe.cpp
+	"../../Include/API/consts.h"
+	"../../Include/API/CDonneesGraphe.h"
+	<fstream>
+	<iostream>
+	<sstream>
+
+1429534608 d:\documents\cpp\sasyan_lalanne_koehl\src\include\api\cdonneesgraphe.h
+	<vector>
+	<string.h>
+	"CData2i.h"
+	"CPoint3f.h"
+
+1429721295 d:\documents\cpp\sasyan_lalanne_koehl\src\include\api\cpoint3f.h
+	<string>
+	<ctgmath>
+
+1431690508 source:d:\documents\cpp\sasyan_lalanne_koehl\src\src\api\cgraphe.cpp
+	"../../Include/API/CGraphe.h"
+	<iostream>
+	<string>
+
+1429534610 d:\documents\cpp\sasyan_lalanne_koehl\src\include\api\cgraphe.h
+	<vector>
+	<string>
+	"CSegment.h"
+	"CArc.h"
+	"CSommet.h"
+	"CPointAnnexe.h"
+	"CDonneesGraphe.h"
+	"consts.h"
+
+1429534610 d:\documents\cpp\sasyan_lalanne_koehl\src\include\api\csegment.h
+
+1429534610 d:\documents\cpp\sasyan_lalanne_koehl\src\include\api\csommet.h
+	<vector>
+	<string>
+	"CPoint3f.h"
+
+1429534610 d:\documents\cpp\sasyan_lalanne_koehl\src\include\api\cpointannexe.h
+	"CPoint3f.h"
+
+1431690512 source:d:\documents\cpp\sasyan_lalanne_koehl\src\src\api\cpoint3f.cpp
+	"../../Include/API/CPoint3f.h"
+	"../../Include/API/consts.h"
+	<stdio.h>
+
+1431690515 source:d:\documents\cpp\sasyan_lalanne_koehl\src\src\api\cpointannexe.cpp
+	"../../Include/API/CPointAnnexe.h"
+	<stdio.h>
+
+1431690517 source:d:\documents\cpp\sasyan_lalanne_koehl\src\src\api\csegment.cpp
+	"../../Include/API/CSegment.h"
+
+1431690521 source:d:\documents\cpp\sasyan_lalanne_koehl\src\src\api\csommet.cpp
+	"../../Include/API/CSommet.h"
+	"../../Include/API/consts.h"
+	<stdio.h>
+	<algorithm>
+
+1431690563 source:d:\documents\cpp\sasyan_lalanne_koehl\src\src\class\camera.cpp
+	"../../include/Class/Camera.h"
+	<cmath>
+	<iostream>
+
+1429642287 d:\documents\cpp\sasyan_lalanne_koehl\src\include\class\camera.h
+	"vecteur.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1431680454 d:\documents\cpp\sasyan_lalanne_koehl\src\include\class\vecteur.h
+	"../API/CPoint3f.h"
+
+1431690569 source:d:\documents\cpp\sasyan_lalanne_koehl\src\src\class\collection.cpp
+	"../../Include/Class/Collection.h"
+	<cmath>
+	<iostream>
+
+1429651245 d:\documents\cpp\sasyan_lalanne_koehl\src\include\class\collection.h
+	<vector>
+	"train.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1431680463 d:\documents\cpp\sasyan_lalanne_koehl\src\include\class\train.h
+	<vector>
+	"../API/CDonneesGraphe.h"
+	"../API/CGraphe.h"
+	"../API/CSommet.h"
+	"wagon.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1431680467 d:\documents\cpp\sasyan_lalanne_koehl\src\include\class\wagon.h
+	"../API/CDonneesGraphe.h"
+	"../API/CGraphe.h"
+	"../API/CSommet.h"
+	"vecteur.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1431690590 source:d:\documents\cpp\sasyan_lalanne_koehl\src\src\class\train.cpp
+	"../../Include/Class/train.h"
+	<iostream>
+
+1431690596 source:d:\documents\cpp\sasyan_lalanne_koehl\src\src\class\triangle.cpp
+	"../../Include/Class/Triangle.h"
+
+1431680474 d:\documents\cpp\sasyan_lalanne_koehl\src\include\class\triangle.h
+	"windows.h"
+	"../API/CPoint3f.h"
+	"vecteur.h"
+	<vector>
+	<ctgmath>
+	"../utilitaires.h"
+
+1431680544 d:\documents\cpp\sasyan_lalanne_koehl\src\include\utilitaires.h
+	<iostream>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<vector>
+	<time.h>
+	<stdlib.h>
+	<math.h>
+	<fstream>
+	<iostream>
+	<sstream>
+	"API/CDonneesGraphe.h"
+	"API/CGraphe.h"
+	"API/CSommet.h"
+	"Librairies/sdlglutils.h"
+	"Class/wagon.h"
+	"Class/train.h"
+	"Class/vecteur.h"
+	"Class/Camera.h"
+
+1147265384 d:\documents\cpp\sasyan_lalanne_koehl\src\include\librairies\sdlglutils.h
+	<GL/gl.h>
+	<SDL/SDL.h>
+
+1431690601 source:d:\documents\cpp\sasyan_lalanne_koehl\src\src\class\triangulation.cpp
+	"../../Include/Class/Triangulation.h"
+
+1430126494 d:\documents\cpp\sasyan_lalanne_koehl\src\include\class\triangulation.h
+	<vector>
+	"Triangle.h"
+	<algorithm>
+	<fstream>
+	<iostream>
+	<sstream>
+	<windows.h>
+
+1431690607 source:d:\documents\cpp\sasyan_lalanne_koehl\src\src\class\vecteur.cpp
+	"../../Include/Class/vecteur.h"
+	<cmath>
+
+1431693652 source:d:\documents\cpp\sasyan_lalanne_koehl\src\src\class\wagon.cpp
+	<time.h>
+	<stdlib.h>
+	<cmath>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<iostream>
+	"../../include/graphic.h"
+	"../../Include/Class/wagon.h"
+	"../../Include/Class/vecteur.h"
+
+1431691288 d:\documents\cpp\sasyan_lalanne_koehl\src\include\graphic.h
+	<iostream>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	"API/CDonneesGraphe.h"
+	"API/CGraphe.h"
+	"API/CSommet.h"
+	<vector>
+	<time.h>
+	<stdlib.h>
+	<math.h>
+	<fstream>
+	"windows.h"
+	"Librairies/sdlglutils.h"
+	"Class/wagon.h"
+	"Class/train.h"
+	"Class/Collection.h"
+	"Class/Camera.h"
+	"Class/vecteur.h"
+	"globales.h"
+
+1431680598 d:\documents\cpp\sasyan_lalanne_koehl\src\include\globales.h
+	"Class/Triangulation.h"
+
+1431691620 source:d:\documents\cpp\sasyan_lalanne_koehl\src\src\graphic.cpp
+	"graphic.h"
+
+1431690672 source:d:\documents\cpp\sasyan_lalanne_koehl\src\src\librairies\sdlglutils.cpp
+	"../../include/Librairies/sdlglutils.h"
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<GL/glu.h>
+	<cstring>
+	<cstdlib>
+
+1431695544 source:d:\documents\cpp\sasyan_lalanne_koehl\src\src\main.cpp
+	<iostream>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<vector>
+	<time.h>
+	<stdlib.h>
+	<math.h>
+	<fstream>
+	"graphic.h"
+	"API/CDonneesGraphe.h"
+	"API/CGraphe.h"
+	"API/CSommet.h"
+	"Librairies/sdlglutils.h"
+	"Class/Camera.h"
+	"Class/vecteur.h"
+	"Class/Triangle.h"
+	"Class/Triangulation.h"
+	"Class/wagon.h"
+	"Class/train.h"
+	"Class/Collection.h"
+	"utilitaires.h"
+	"globales.h"
+
+1429729471 source:d:\documents\cpp\sasyan_lalanne_koehl\src\src\utilitaires.cpp
+	"utilitaires.h"
+
