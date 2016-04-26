@@ -569,3 +569,105 @@
 	"../include/API/CSommet.h"
 	"../include/Librairies/sdlglutils.h"
 
+1431690490 source:d:\cpp\projet-opengl-train\src\traingl\src\api\carc.cpp
+	"../../Include/API/CArc.h"
+	<string>
+	<stdio.h>
+
+1429534608 d:\cpp\projet-opengl-train\src\traingl\include\api\carc.h
+	<vector>
+	<string>
+
+1431690501 source:d:\cpp\projet-opengl-train\src\traingl\src\api\cdata2i.cpp
+	"../../Include/API/CData2i.h"
+	"../../Include/API/consts.h"
+
+1429534608 d:\cpp\projet-opengl-train\src\traingl\include\api\cdata2i.h
+
+1429534610 d:\cpp\projet-opengl-train\src\traingl\include\api\consts.h
+
+1431690504 source:d:\cpp\projet-opengl-train\src\traingl\src\api\cdonneesgraphe.cpp
+	"../../Include/API/consts.h"
+	"../../Include/API/CDonneesGraphe.h"
+	<fstream>
+	<iostream>
+	<sstream>
+
+1429534608 d:\cpp\projet-opengl-train\src\traingl\include\api\cdonneesgraphe.h
+	<vector>
+	<string.h>
+	"CData2i.h"
+	"CPoint3f.h"
+
+1429721295 d:\cpp\projet-opengl-train\src\traingl\include\api\cpoint3f.h
+	<string>
+	<ctgmath>
+
+1431690508 source:d:\cpp\projet-opengl-train\src\traingl\src\api\cgraphe.cpp
+	"../../Include/API/CGraphe.h"
+	<iostream>
+	<string>
+
+1429534610 d:\cpp\projet-opengl-train\src\traingl\include\api\cgraphe.h
+	<vector>
+	<string>
+	"CSegment.h"
+	"CArc.h"
+	"CSommet.h"
+	"CPointAnnexe.h"
+	"CDonneesGraphe.h"
+	"consts.h"
+
+1429534610 d:\cpp\projet-opengl-train\src\traingl\include\api\csegment.h
+
+1429534610 d:\cpp\projet-opengl-train\src\traingl\include\api\csommet.h
+	<vector>
+	<string>
+	"CPoint3f.h"
+
+1429534610 d:\cpp\projet-opengl-train\src\traingl\include\api\cpointannexe.h
+	"CPoint3f.h"
+
+1431690512 source:d:\cpp\projet-opengl-train\src\traingl\src\api\cpoint3f.cpp
+	"../../Include/API/CPoint3f.h"
+	"../../Include/API/consts.h"
+	<stdio.h>
+
+1431690515 source:d:\cpp\projet-opengl-train\src\traingl\src\api\cpointannexe.cpp
+	"../../Include/API/CPointAnnexe.h"
+	<stdio.h>
+
+1431690517 source:d:\cpp\projet-opengl-train\src\traingl\src\api\csegment.cpp
+	"../../Include/API/CSegment.h"
+
+1431690521 source:d:\cpp\projet-opengl-train\src\traingl\src\api\csommet.cpp
+	"../../Include/API/CSommet.h"
+	"../../Include/API/consts.h"
+	<stdio.h>
+	<algorithm>
+
+1431690672 source:d:\cpp\projet-opengl-train\src\traingl\src\librairies\sdlglutils.cpp
+	"../../include/Librairies/sdlglutils.h"
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<GL/glu.h>
+	<cstring>
+	<cstdlib>
+
+1147265384 d:\cpp\projet-opengl-train\src\traingl\include\librairies\sdlglutils.h
+	<GL/gl.h>
+	<SDL/SDL.h>
+
+1461712738 source:d:\cpp\projet-opengl-train\src\traingl\src\main.cpp
+	<iostream>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<vector>
+	<time.h>
+	<stdlib.h>
+	<math.h>
+	<fstream>
+	"../include/API/CDonneesGraphe.h"
+	"../include/API/CGraphe.h"
+

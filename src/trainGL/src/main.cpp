@@ -10,8 +10,6 @@
 
 #include "../include/API/CDonneesGraphe.h"
 #include "../include/API/CGraphe.h"
-#include "../include/API/CSommet.h"
-#include "../include/Librairies/sdlglutils.h"
 
 #define mSPF 30
 
@@ -21,3 +19,7 @@ using namespace std;
 CDonneesGraphe gdata("data/SXYZ.TXT", "data/SIF.TXT", "data/PAXYZ.TXT", "data/AXYZ.TXT");
 // Constrcuction de la base de donnees orientee objet du graphe :
 CGraphe graphe(gdata);
+
+int main(int argc, char *argv[]) {
+    return 0;
+}
