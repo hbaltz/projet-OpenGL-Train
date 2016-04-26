@@ -1331,3 +1331,257 @@
 1429729471 source:d:\documents\cpp\sasyan_lalanne_koehl\src\src\utilitaires.cpp
 	"utilitaires.h"
 
+1431690490 source:d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\src\api\carc.cpp
+	"../../Include/API/CArc.h"
+	<string>
+	<stdio.h>
+
+1429534608 d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\include\api\carc.h
+	<vector>
+	<string>
+
+1431690501 source:d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\src\api\cdata2i.cpp
+	"../../Include/API/CData2i.h"
+	"../../Include/API/consts.h"
+
+1429534608 d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\include\api\cdata2i.h
+
+1429534610 d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\include\api\consts.h
+
+1431690504 source:d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\src\api\cdonneesgraphe.cpp
+	"../../Include/API/consts.h"
+	"../../Include/API/CDonneesGraphe.h"
+	<fstream>
+	<iostream>
+	<sstream>
+
+1429534608 d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\include\api\cdonneesgraphe.h
+	<vector>
+	<string.h>
+	"CData2i.h"
+	"CPoint3f.h"
+
+1429721295 d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\include\api\cpoint3f.h
+	<string>
+	<ctgmath>
+
+1431690508 source:d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\src\api\cgraphe.cpp
+	"../../Include/API/CGraphe.h"
+	<iostream>
+	<string>
+
+1429534610 d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\include\api\cgraphe.h
+	<vector>
+	<string>
+	"CSegment.h"
+	"CArc.h"
+	"CSommet.h"
+	"CPointAnnexe.h"
+	"CDonneesGraphe.h"
+	"consts.h"
+
+1429534610 d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\include\api\csegment.h
+
+1429534610 d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\include\api\csommet.h
+	<vector>
+	<string>
+	"CPoint3f.h"
+
+1429534610 d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\include\api\cpointannexe.h
+	"CPoint3f.h"
+
+1431690512 source:d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\src\api\cpoint3f.cpp
+	"../../Include/API/CPoint3f.h"
+	"../../Include/API/consts.h"
+	<stdio.h>
+
+1431690515 source:d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\src\api\cpointannexe.cpp
+	"../../Include/API/CPointAnnexe.h"
+	<stdio.h>
+
+1431690517 source:d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\src\api\csegment.cpp
+	"../../Include/API/CSegment.h"
+
+1431690521 source:d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\src\api\csommet.cpp
+	"../../Include/API/CSommet.h"
+	"../../Include/API/consts.h"
+	<stdio.h>
+	<algorithm>
+
+1431690563 source:d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\src\class\camera.cpp
+	"../../include/Class/Camera.h"
+	<cmath>
+	<iostream>
+
+1429642287 d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\include\class\camera.h
+	"vecteur.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1431680454 d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\include\class\vecteur.h
+	"../API/CPoint3f.h"
+
+1431690569 source:d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\src\class\collection.cpp
+	"../../Include/Class/Collection.h"
+	<cmath>
+	<iostream>
+
+1429651245 d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\include\class\collection.h
+	<vector>
+	"train.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1431680463 d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\include\class\train.h
+	<vector>
+	"../API/CDonneesGraphe.h"
+	"../API/CGraphe.h"
+	"../API/CSommet.h"
+	"wagon.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1431680467 d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\include\class\wagon.h
+	"../API/CDonneesGraphe.h"
+	"../API/CGraphe.h"
+	"../API/CSommet.h"
+	"vecteur.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1431690590 source:d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\src\class\train.cpp
+	"../../Include/Class/train.h"
+	<iostream>
+
+1431690596 source:d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\src\class\triangle.cpp
+	"../../Include/Class/Triangle.h"
+
+1431680474 d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\include\class\triangle.h
+	"windows.h"
+	"../API/CPoint3f.h"
+	"vecteur.h"
+	<vector>
+	<ctgmath>
+	"../utilitaires.h"
+
+1431680544 d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\include\utilitaires.h
+	<iostream>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<vector>
+	<time.h>
+	<stdlib.h>
+	<math.h>
+	<fstream>
+	<iostream>
+	<sstream>
+	"API/CDonneesGraphe.h"
+	"API/CGraphe.h"
+	"API/CSommet.h"
+	"Librairies/sdlglutils.h"
+	"Class/wagon.h"
+	"Class/train.h"
+	"Class/vecteur.h"
+	"Class/Camera.h"
+
+1147265384 d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\include\librairies\sdlglutils.h
+	<GL/gl.h>
+	<SDL/SDL.h>
+
+1431690601 source:d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\src\class\triangulation.cpp
+	"../../Include/Class/Triangulation.h"
+
+1430126494 d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\include\class\triangulation.h
+	<vector>
+	"Triangle.h"
+	<algorithm>
+	<fstream>
+	<iostream>
+	<sstream>
+	<windows.h>
+
+1431690607 source:d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\src\class\vecteur.cpp
+	"../../Include/Class/vecteur.h"
+	<cmath>
+
+1431693652 source:d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\src\class\wagon.cpp
+	<time.h>
+	<stdlib.h>
+	<cmath>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<iostream>
+	"../../include/graphic.h"
+	"../../Include/Class/wagon.h"
+	"../../Include/Class/vecteur.h"
+
+1431691288 d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\include\graphic.h
+	<iostream>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	"API/CDonneesGraphe.h"
+	"API/CGraphe.h"
+	"API/CSommet.h"
+	<vector>
+	<time.h>
+	<stdlib.h>
+	<math.h>
+	<fstream>
+	"windows.h"
+	"Librairies/sdlglutils.h"
+	"Class/wagon.h"
+	"Class/train.h"
+	"Class/Collection.h"
+	"Class/Camera.h"
+	"Class/vecteur.h"
+	"globales.h"
+
+1431680598 d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\include\globales.h
+	"Class/Triangulation.h"
+
+1431691620 source:d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\src\graphic.cpp
+	"graphic.h"
+
+1431690672 source:d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\src\librairies\sdlglutils.cpp
+	"../../include/Librairies/sdlglutils.h"
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<GL/glu.h>
+	<cstring>
+	<cstdlib>
+
+1431695544 source:d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\src\main.cpp
+	<iostream>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<vector>
+	<time.h>
+	<stdlib.h>
+	<math.h>
+	<fstream>
+	"graphic.h"
+	"API/CDonneesGraphe.h"
+	"API/CGraphe.h"
+	"API/CSommet.h"
+	"Librairies/sdlglutils.h"
+	"Class/Camera.h"
+	"Class/vecteur.h"
+	"Class/Triangle.h"
+	"Class/Triangulation.h"
+	"Class/wagon.h"
+	"Class/train.h"
+	"Class/Collection.h"
+	"utilitaires.h"
+	"globales.h"
+
+1429729471 source:d:\cpp\projet-opengl-train\0-an dernier\sasyan_lalanne_koehl\src\src\utilitaires.cpp
+	"utilitaires.h"
+

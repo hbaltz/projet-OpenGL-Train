@@ -7,9 +7,9 @@
 //============================================================================
 
 
-#include "CDonneesGraphe.h"
-#include "CGraphe.h"
-#include "CSommet.h"
+#include "../../Include/API/CDonneesGraphe.h"
+#include "../../Include/API/CGraphe.h"
+#include "../../Include/API/CSommet.h"
 #include <vector>
 #include <iostream>
 #include <time.h>

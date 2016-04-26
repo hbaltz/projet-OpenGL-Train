@@ -60,7 +60,6 @@
 		<Unit filename="src/API/CPointAnnexe.cpp" />
 		<Unit filename="src/API/CSegment.cpp" />
 		<Unit filename="src/API/CSommet.cpp" />
-		<Unit filename="src/API/main.cpp" />
 		<Unit filename="src/Librairies/sdlglutils.cpp" />
 		<Unit filename="src/main.cpp" />
 		<Extensions>
