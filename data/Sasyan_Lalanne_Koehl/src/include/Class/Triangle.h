@@ -10,6 +10,7 @@
 
 using namespace std;
 
+
 class Triangle {
     public:
         // Constro / destro :

@@ -2157,7 +2157,7 @@
 	<GL/gl.h>
 	<SDL/SDL.h>
 
-1462718144 source:d:\cpp\projet-opengl-train\src\train\src\main.cpp
+1462730720 source:d:\cpp\projet-opengl-train\src\train\src\main.cpp
 	<iostream>
 	<GL/gl.h>
 	<GL/glu.h>
@@ -2167,8 +2167,15 @@
 	<stdlib.h>
 	<math.h>
 	<fstream>
+	<SDL/SDL.h>
 	"API/CDonneesGraphe.h"
 	"API/CGraphe.h"
+	"API/CSommet.h"
+	"Librairies/sdlglutils.h"
+	"Class/vecteur.h"
+	"Class/Triangle.h"
+	"Class/Triangulation.h"
+	"globales.h"
 
 1429729471 source:d:\cpp\projet-opengl-train\src\train\src\utilitaires.cpp
 	"utilitaires.h"
@@ -2203,7 +2210,7 @@
 	<GL/glu.h>
 	<GL/glut.h>
 
-1431680454 d:\cpp\projet-opengl-train\src\train\include\class\vecteur.h
+1462722754 d:\cpp\projet-opengl-train\src\train\include\class\vecteur.h
 	"../API/CPoint3f.h"
 
 1431680463 d:\cpp\projet-opengl-train\src\train\include\class\train.h
@@ -2221,4 +2228,66 @@
 	<GL/gl.h>
 	<GL/glu.h>
 	<GL/glut.h>
+
+1462720720 source:d:\cpp\projet-opengl-train\src\train\src\graphic.cpp
+	"graphic.h"
+
+1431691288 d:\cpp\projet-opengl-train\src\train\include\graphic.h
+	<iostream>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	"API/CDonneesGraphe.h"
+	"API/CGraphe.h"
+	"API/CSommet.h"
+	<vector>
+	<time.h>
+	<stdlib.h>
+	<math.h>
+	<fstream>
+	"windows.h"
+	"Librairies/sdlglutils.h"
+	"Class/wagon.h"
+	"Class/train.h"
+	"Class/Collection.h"
+	"Class/Camera.h"
+	"Class/vecteur.h"
+	"globales.h"
+
+1429651245 d:\cpp\projet-opengl-train\src\train\include\class\collection.h
+	<vector>
+	"train.h"
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+
+1462723195 d:\cpp\projet-opengl-train\src\train\include\globales.h
+	"Class/Triangulation.h"
+
+1462722422 d:\cpp\projet-opengl-train\src\train\include\class\triangulation.h
+	<vector>
+	"Triangle.h"
+	<algorithm>
+	<fstream>
+	<iostream>
+	<sstream>
+	<windows.h>
+
+1462722247 d:\cpp\projet-opengl-train\src\train\include\class\triangle.h
+	"windows.h"
+	"../API/CPoint3f.h"
+	"vecteur.h"
+	<vector>
+	<ctgmath>
+	"../utilitaires.h"
+
+1462722076 source:d:\cpp\projet-opengl-train\src\train\src\class\triangle.cpp
+	"../../Include/Class/Triangle.h"
+
+1462722790 source:d:\cpp\projet-opengl-train\src\train\src\class\triangulation.cpp
+	"../../Include/Class/Triangulation.h"
+
+1462722824 source:d:\cpp\projet-opengl-train\src\train\src\class\vecteur.cpp
+	"../../Include/Class/vecteur.h"
+	<cmath>
 
