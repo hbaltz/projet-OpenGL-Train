@@ -11,6 +11,14 @@
 
 using namespace std;
 
+/**
+* Défintion de la classe Triangulation :
+* Elle possède :
+* - Deux constructeurs
+* - Une méthode ajouterTriangle(Triangle triangle) pour ajouter un triangle à la Triangulation
+* - Une variable : vector<Triangle> triangles conteant l'ensemble des triangles formant la triangulation
+**/
+
 class Triangulation {
     public:
         Triangulation();
