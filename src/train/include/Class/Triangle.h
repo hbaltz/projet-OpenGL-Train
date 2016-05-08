@@ -15,7 +15,7 @@ using namespace std;
 * Elle possède :
 * - Trois constructeurs ( à partir de Point3D, à partir de vecteur et par copie)
 * - Une méthode toString() pour afficher les sommets composants le triangles sous forme textuelle
-* - Quatres variables : a, b ,c les sommets du tringles et texture sa texture
+* - Quatres variables : a, b ,c les sommets du triangle et texture sa texture
 **/
 
 class Triangle {

@@ -45,7 +45,7 @@ CDonneesGraphe gdata("data/SXYZ.TXT", "data/SIF.TXT", "data/PAXYZ.TXT", "data/AX
 // Constrcuction de la base de donnees orientee objet du graphe
 CGraphe graphe(gdata);
 
-int main() {
+int main(int argc, char **argv) {
     genererTriangulation();
 
     /*------------------------------*/
