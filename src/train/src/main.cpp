@@ -32,6 +32,8 @@ GLuint herbe, neige, ciel, bois, feuille, pont, gravier, poutre_bois, cote_0, fa
 
 // Fonctions :
 void genererTriangulation();
+void Reshape(int width, int height);
+void Draw();
 
 // Construction de la triangulation :
 Triangulation triangulation;
@@ -46,11 +48,57 @@ CDonneesGraphe gdata("data/SXYZ.TXT", "data/SIF.TXT", "data/PAXYZ.TXT", "data/AX
 CGraphe graphe(gdata);
 
 int main(int argc, char **argv) {
-    genererTriangulation();
+    glutInit(&argc, argv);
+    glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH);
+    glutInitWindowSize(640,480); 	//Optionnel
+    glutCreateWindow("Ma première fenêtre OpenGL !");
+    glutFullScreen(); 	//Optionnel
+
+    glutReshapeFunc(Reshape);
+    glutDisplayFunc(Draw);
+    //InitGL();
+
+    glutMainLoop();
 
     /*------------------------------*/
    return 0;
 }
+
+void Reshape(int width, int height)
+{
+  	glViewport(0,0,width,height);
+  	glMatrixMode(GL_PROJECTION);
+  	glLoadIdentity();
+  	gluPerspective(
+                    45,
+                    float(width)/float(height),
+                    0.1,
+                    100
+                    ); 	//Pour les explications, lire le tutorial sur OGL et win
+  	glMatrixMode(GL_MODELVIEW); 	//Optionnel
+}
+
+void Draw()
+{
+    glClear(GL_COLOR_BUFFER_BIT |GL_DEPTH_BUFFER_BIT); 	//Efface le frame buffer et le Z-buffer
+    glMatrixMode(GL_MODELVIEW); 	//Choisit la matrice MODELVIEW
+    glLoadIdentity(); 	//Réinitialise la matrice
+    gluLookAt(0,0,-10,0,0,0,0,1,0);
+    glBegin(GL_TRIANGLES);
+
+    glVertex2i(0,1);
+    glVertex2i(-1,0);
+    glVertex2i(1,0);
+
+    glEnd(); 	//Pour les explications, lire le tutorial sur OGL et win
+
+    glutSwapBuffers();
+    //Attention : pas SwapBuffers(DC) !
+
+    glutPostRedisplay();
+    //Demande de recalculer la scène
+}
+
 
 void genererTriangulation() {
     triangulation.ajouterTriangle(Triangle(CPoint3f(10,14,0), CPoint3f(9.5,16,3), CPoint3f(7,16,0), &herbe));
