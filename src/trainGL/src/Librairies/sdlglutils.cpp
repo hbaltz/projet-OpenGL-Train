@@ -14,7 +14,7 @@ GLuint loadTexture(const char * filename,bool useMipMap)
     SDL_Surface * picture_surface = NULL;
     SDL_Surface *gl_surface = NULL;
     SDL_Surface * gl_fliped_surface = NULL;
-    Uint32 rmask, gmask, bmask, amask;
+    Uint32 rmask, gmask, bmask, amask
 
     picture_surface = IMG_Load(filename);
     if (picture_surface == NULL)
