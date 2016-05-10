@@ -6,8 +6,8 @@
 // Listes de toutes les varialbes globales utilisées dans le projet :
 
 
-//extern Camera *cam; // La caméra est globale
-//extern Collection *collection; // La collection est globale
+extern Camera *cam; // La caméra est globale
+extern Collection *collection; // La collection est globale
 
 // Les donnees du graph sont globales :
 extern CDonneesGraphe gdata;

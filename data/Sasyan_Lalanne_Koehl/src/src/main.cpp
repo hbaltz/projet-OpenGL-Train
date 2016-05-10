@@ -97,7 +97,7 @@ void Initialiser() {
     glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE | GLUT_DEPTH) ;
     glPointSize(4);
     glLineWidth(2);
-    glutFullScreen();
+    //glutFullScreen();
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
     gluPerspective(60,1.0,0.1,1000);

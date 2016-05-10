@@ -2229,7 +2229,7 @@
 	<GL/glu.h>
 	<GL/glut.h>
 
-1462731614 source:d:\cpp\projet-opengl-train\src\train\src\graphic.cpp
+1462897007 source:d:\cpp\projet-opengl-train\src\train\src\graphic.cpp
 	"graphic.h"
 
 1431691288 d:\cpp\projet-opengl-train\src\train\include\graphic.h
@@ -2261,7 +2261,7 @@
 	<GL/glu.h>
 	<GL/glut.h>
 
-1462723195 d:\cpp\projet-opengl-train\src\train\include\globales.h
+1462897118 d:\cpp\projet-opengl-train\src\train\include\globales.h
 	"Class/Triangulation.h"
 
 1462722422 d:\cpp\projet-opengl-train\src\train\include\class\triangulation.h
@@ -2290,4 +2290,30 @@
 1462722824 source:d:\cpp\projet-opengl-train\src\train\src\class\vecteur.cpp
 	"../../Include/Class/vecteur.h"
 	<cmath>
+
+1431690563 source:d:\cpp\projet-opengl-train\src\train\src\class\camera.cpp
+	"../../include/Class/Camera.h"
+	<cmath>
+	<iostream>
+
+1431690569 source:d:\cpp\projet-opengl-train\src\train\src\class\collection.cpp
+	"../../Include/Class/Collection.h"
+	<cmath>
+	<iostream>
+
+1431690590 source:d:\cpp\projet-opengl-train\src\train\src\class\train.cpp
+	"../../Include/Class/train.h"
+	<iostream>
+
+1431693652 source:d:\cpp\projet-opengl-train\src\train\src\class\wagon.cpp
+	<time.h>
+	<stdlib.h>
+	<cmath>
+	<GL/gl.h>
+	<GL/glu.h>
+	<GL/glut.h>
+	<iostream>
+	"../../include/graphic.h"
+	"../../Include/Class/wagon.h"
+	"../../Include/Class/vecteur.h"
 
