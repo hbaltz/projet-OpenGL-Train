@@ -32,7 +32,7 @@ using namespace std;
 *************************************************/
 
 // Déclaration des images pour les textures :
-GLuint wagon, herbe, neige, ciel, bois, feuille, pont, gravier, poutre_bois;
+GLuint wagon, herbe, neige, ciel, bois, feuille, pont, gravier, poutre_bois, tunnel, eau;
 
 // Caméra :
 Camera *cam;
@@ -185,11 +185,11 @@ void genererTriangulation() {
     triangulation.ajouterTriangle(Triangle(CPoint3f(15,12,0), CPoint3f(10,14,0), CPoint3f(13,14,2), &herbe));
     triangulation.ajouterTriangle(Triangle(CPoint3f(9.5,16,3), CPoint3f(10,14,0), CPoint3f(13,14,2), &herbe));
 
-    triangulation.ajouterTriangle(Triangle(CPoint3f(16,16,2), CPoint3f(16.1,14,2), CPoint3f(13,14,2), &neige));
-    triangulation.ajouterTriangle(Triangle(CPoint3f(16,16,2), CPoint3f(13.5,18.8,3), CPoint3f(13,14,2), &neige));
-    triangulation.ajouterTriangle(Triangle(CPoint3f(9.5,16,3), CPoint3f(13.5,18.8,3), CPoint3f(13,14,2), &neige));
-    triangulation.ajouterTriangle(Triangle(CPoint3f(9.5,16,3), CPoint3f(13.5,18.8,3), CPoint3f(11.5,19,3), &neige));
-    triangulation.ajouterTriangle(Triangle(CPoint3f(9.5,16,3), CPoint3f(10,18.8,3), CPoint3f(11.5,19,3), &neige));
+    triangulation.ajouterTriangle(Triangle(CPoint3f(16,16,2), CPoint3f(16.1,14,2), CPoint3f(13,14,2), &eau));
+    triangulation.ajouterTriangle(Triangle(CPoint3f(16,16,2), CPoint3f(13.5,18.8,3), CPoint3f(13,14,2), &eau));
+    triangulation.ajouterTriangle(Triangle(CPoint3f(9.5,16,3), CPoint3f(13.5,18.8,3), CPoint3f(13,14,2), &eau));
+    triangulation.ajouterTriangle(Triangle(CPoint3f(9.5,16,3), CPoint3f(13.5,18.8,3), CPoint3f(11.5,19,3), &eau));
+    triangulation.ajouterTriangle(Triangle(CPoint3f(9.5,16,3), CPoint3f(10,18.8,3), CPoint3f(11.5,19,3), &eau));
 }
 
 

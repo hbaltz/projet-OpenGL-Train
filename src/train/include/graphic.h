@@ -32,6 +32,7 @@ void dessinerVoies();
 void dessinerArbres();
 void dessinerPont();
 void dessinerTerrain();
+void dessinerTunDon();
 
 // Fonctions élémentaires :
 
@@ -40,6 +41,7 @@ void dessinerSapin(float x, float y, float z, float h1, float h2, float l);
 void dessinerSapinNeige(float x, float y, float z, float h1, float h2);
 void dessinerRail(Vecteur debut, Vecteur fin);
 void dessinerPoteau(float V, float r,  float h, GLint s);
+void dessinerDonnut(float x, float y, float z);
 void dessinerTexture(GLuint texture, Vecteur a, Vecteur b, Vecteur c, Vecteur d);
 void dessinerTexture(Vecteur a, Vecteur b, Vecteur c, Vecteur d);
 void dessinerTextureSansDeformation(Vecteur a, Vecteur b, Vecteur c, Vecteur d);

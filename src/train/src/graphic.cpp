@@ -16,6 +16,8 @@ void chargerTextures() {
     pont = loadTexture("textures/pont.jpg");
     gravier = loadTexture("textures/gravier.jpg");
     poutre_bois = loadTexture("textures/poutre_bois.jpg");
+    tunnel = loadTexture("textures/tunnel.jpg");
+    eau = loadTexture("textures/eau.jpg");
 }
 
 // Fonction principale qui va dessiner l'ensemble de notre projet :
@@ -62,6 +64,9 @@ void dessiner() {
     // Herbe :
     dessinerTerrain();
 
+    // Donnut :
+    dessinerTunDon();
+
     // Pont :
     glColor3f(1,1,1);
     dessinerPont();
@@ -77,7 +82,7 @@ void dessiner() {
 void dessinerArbres() {
     glColor3f(0.1,1,0.1);
 
-    dessinerArbre(-1,5,0,2.2);
+    //dessinerArbre(-1,5,0,2.2);
     dessinerArbre(4,3,0,2.4);
     dessinerArbre(8,14,0,1.9);
     dessinerArbre(-1,14,0,2.2);
@@ -91,11 +96,12 @@ void dessinerArbres() {
     dessinerSapin(1,14,0,0.75,2.25,0.5);
     dessinerSapin(20,13.5,0,1.25,2,0.5);
     dessinerSapin(18,14.5,0,0.75,2.25,0.5);
-
+/*
     dessinerSapinNeige(11,18, 0, 4.5, 3.5);
     dessinerSapinNeige(14.4,15.5, 0, 3.5, 2.5);
     dessinerSapinNeige(13,18, 0, 3.8, 3.1);
     dessinerSapinNeige(11,16.2, 0, 4.4, 3.2);
+*/
 }
 
 void dessinerTerrain() {
@@ -129,24 +135,24 @@ void dessinerVoies() {
     glColor3f(1,1,1);
     Vecteur debut, fin;
 
-    // on parcourt tous les arcs et on les dessine un par un
+    // On parcourt tous les arcs et on les dessine un par un
     for (int i=0; i<graphe.nb_arc; i++) {
         CArc arc = graphe.list_arc[i];
         int i_SI = arc.id_sommet_ini;
         int i_SF = arc.id_sommet_fin;
         int NPA = arc.list_point_annexe.size();
 
-        // dessin de la sphère pour le sommet de l'arc
+        // Dessin de la sphère pour le sommet de l'arc :
         glPushMatrix();
         glTranslatef(graphe.list_sommet[i_SI].X,graphe.list_sommet[i_SI].Y,graphe.list_sommet[i_SI].Z);
         glColor3f(0.8,0.8,0.8);
         glutSolidSphere(0.25,50,50);
         glPopMatrix();
 
-        // sommet initial
+        // Sommet initial :
         debut = Vecteur(graphe.list_sommet[i_SI].X, graphe.list_sommet[i_SI].Y, graphe.list_sommet[i_SI].Z);;
 
-        // points annexes
+        // Points annexes :
         for(int j=0; j<NPA; j++) {
             int iPA = arc.list_point_annexe.at(j);
             fin = Vecteur(graphe.list_point_annexe[iPA].X, graphe.list_point_annexe[iPA].Y, graphe.list_point_annexe[iPA].Z);
@@ -154,7 +160,7 @@ void dessinerVoies() {
             debut = fin;
         }
 
-        // sommet final
+        // Sommet final :
         fin = Vecteur(graphe.list_sommet[i_SF].X, graphe.list_sommet[i_SF].Y, graphe.list_sommet[i_SF].Z);
         dessinerRail(debut, fin);
     }
@@ -188,7 +194,22 @@ void dessinerPont() {
     glDisable(GL_TEXTURE_2D);
 }
 
-// Fonctions élémentaires :
+void dessinerTunDon() {
+    glPushMatrix();
+
+    dessinerDonnut(2.3,3,0.3);
+    dessinerDonnut(2.2,3.5,0.3);
+    dessinerDonnut(2.1,4,0.3);
+    dessinerDonnut(2,4.5,0.3);
+    dessinerDonnut(1.9,5,0.3);
+    dessinerDonnut(1.8,5.5,0.3);
+
+    glPopMatrix();
+}
+
+/*************************************************
+************ Fonctions élémentaires : ************
+*************************************************/
 
 void dessinerRectangle(Vecteur a1, Vecteur b1, Vecteur c1, Vecteur d1, Vecteur a2, Vecteur b2, Vecteur c2, Vecteur d2) {
     dessinerTextureSansDeformation(a1,b1,c1,d1);
@@ -369,6 +390,24 @@ void dessinerPoteau(float V, float r, float h, GLint s) {
 
     glPopMatrix();
 }
+
+void dessinerDonnut(float x, float y, float z) {
+    glPushMatrix();
+
+    glTranslatef(x,y,z);
+    glRotated(90,1,0,0);
+    glRotated(20,0,1,0);
+
+    glEnable(GL_TEXTURE_2D);
+
+    glColor3d(1,0.4,0.1);
+    glutWireTorus(0.3 ,1.1, 10 , 100);
+
+    glDisable(GL_TEXTURE_2D);
+
+    glPopMatrix();
+}
+
 
 
 void dessinerTexture(GLuint texture, Vecteur a, Vecteur b, Vecteur c, Vecteur d) {
