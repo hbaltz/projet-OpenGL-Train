@@ -9,13 +9,21 @@
 
 using namespace std;
 
+/**
+* Défintion de la classe Collection :
+* Elle possède :
+* - Cinq variables
+* - Un constructeur
+* - Quatorze méthodes
+**/
+
 class Collection {
 public:
-    vector<Train> listeTrain;       // liste des trains
-    vector<int>   liTarr;           // liste des trains arrêtés
-    vector<float> liVarr;           // liste des vitessses des trains arrêtés
-    vector<int>   liTral;           // liste des trains ralentis
-    vector<float> liVral;           // liste des vitesses initiales des trains ralentis
+    vector<Train> listeTrain;       // Liste des trains
+    vector<int>   liTarr;           // Liste des trains arrêtés
+    vector<float> liVarr;           // Liste des vitessses des trains arrêtés
+    vector<int>   liTral;           // Liste des trains ralentis
+    vector<float> liVral;           // Liste des vitesses initiales des trains ralentis
 
 public:
     Collection();

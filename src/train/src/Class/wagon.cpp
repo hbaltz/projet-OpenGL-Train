@@ -109,29 +109,9 @@ void Wagon::drawWagon() {
     GLUquadricObj *wag;
     wag = gluNewQuadric();
     gluQuadricTexture(wag,GL_TRUE);
-    glBindTexture(GL_TEXTURE_2D, bois);
+    glBindTexture(GL_TEXTURE_2D, wagon);
     gluCylinder(wag,0.15,0.15,0.9,100,100);
     gluDeleteQuadric(wag);
-
-/*
-    GLuint face, cote, dessus;
-    // On dessine sur les 6 faces :
-    if (color == 0) {
-        face = face_0;
-        cote = cote_0;
-        dessus = dessus_0;
-    } else {
-        face = face_1;
-        cote = cote_1;
-        dessus = dessus_1;
-    }
-    dessinerTexture(face, Vecteur(0.375, 0.25, -0.25), Vecteur(0.375, 0.25, 0.25), Vecteur(0.375, -0.25, 0.25), Vecteur(0.375, -0.25, -0.25)); // Devant
-    dessinerTexture(face, Vecteur(-0.375, 0.25, -0.25), Vecteur(-0.375, 0.25, 0.25), Vecteur(-0.375, -0.25, 0.25), Vecteur(-0.375, -0.25, -0.25)); // Derrière
-    dessinerTexture(cote, Vecteur(-0.375, -0.25, -0.25), Vecteur(-0.375, -0.25, 0.25), Vecteur(0.375, -0.25, 0.25), Vecteur(0.375, -0.25, -0.25)); // Cote 1
-    dessinerTexture(cote, Vecteur(-0.375, 0.25, -0.25), Vecteur(-0.375, 0.25, 0.25), Vecteur(0.375, 0.25, 0.25), Vecteur(0.375, 0.25, -0.25)); // Cote 2
-    dessinerTexture(dessus, Vecteur(-0.375, -0.25, -0.25), Vecteur(-0.375, 0.25, -0.25), Vecteur(0.375, 0.25, -0.25), Vecteur(0.375, -0.25, -0.25)); // Dessous
-    dessinerTexture(dessus, Vecteur(-0.375, -0.25, 0.25), Vecteur(-0.375, 0.25, 0.25), Vecteur(0.375, 0.25, 0.25), Vecteur(0.375, -0.25, 0.25)); // Dessus
-*/
 
     glPopMatrix();
 }

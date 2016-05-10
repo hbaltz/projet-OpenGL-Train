@@ -7,7 +7,6 @@ std::string float2str(float n) {
     return s;
 }
 
-
 bool isLeft(CPoint3f p1, CPoint3f p2, CPoint3f newp) {
 // Teste si point newp est : à Gauche|Sur| à Droite de la droite (p1p2).
 // Result: >0 si newp est à gauche de la droite P1-P2

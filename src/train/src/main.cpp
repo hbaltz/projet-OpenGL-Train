@@ -27,18 +27,22 @@
 
 using namespace std;
 
-/**
-* Déclaration des variables :
-**/
+/*************************************************
+************ Déclaration des variables : *********
+*************************************************/
 
-// Déclaration des images :
-GLuint herbe, neige, ciel, bois, feuille, pont, gravier, poutre_bois, cote_0, face_0, dessus_0, cote_1, face_1, dessus_1;
+// Déclaration des images pour les textures :
+GLuint wagon, herbe, neige, ciel, bois, feuille, pont, gravier, poutre_bois;
 
+// Caméra :
 Camera *cam;
+// Collection :
 Collection *collection;
-
+// Triangulation :
+Triangulation triangulation;
 
 // Fonctions :
+void rotate(int value);
 void Init();
 void genererTriangulation();
 void Mouse(int button, int state, int x, int y);
@@ -46,25 +50,21 @@ void Motion(int x, int y);
 void Keybord(unsigned char key, int x, int y);
 void Reshape(int width, int height);
 
-// Construction de la triangulation :
-Triangulation triangulation;
-
-/**
-* Récupération du graphe :
-**/
+/*************************************************
+************ Récupération du graphe : ************
+*************************************************/
 
 // Déclaration des tables du graphe
 CDonneesGraphe gdata("data/SXYZ.TXT", "data/SIF.TXT", "data/PAXYZ.TXT", "data/AXYZ.TXT");
 // Constrcuction de la base de donnees orientee objet du graphe
 CGraphe graphe(gdata);
 
-void rotate(int value) {
-    collection->deplaceTrains();
-    glutPostRedisplay();
-    glutTimerFunc(mSPF,rotate,value);
-}
+/*************************************************
+************ Activité main: **********************
+*************************************************/
 
 int main(int argc, char **argv) {
+    //Intitilisation :
     glutInit(&argc, argv);
     Init();
 
@@ -73,10 +73,13 @@ int main(int argc, char **argv) {
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_TEXTURE_2D);
 
-    chargerTextures();
+    // Chargement des textures
+    chargerTextures(); // Fonction dans graphic.cpp
 
+    // Création de la caméra :
     cam = new Camera(0,0,10,20,24,0);
 
+    // Création de la collection et ajout des trains
     collection = new Collection;
     collection->addTrain(Train(0, 5, 0.15, 0, &graphe, 0)); cam->nb_train++;
     collection->addTrain(Train(1, 4, 0.05, 2, &graphe, 0)); cam->nb_train++;
@@ -87,11 +90,13 @@ int main(int argc, char **argv) {
     //triangulation = listeTriangles(CPoint3f(-10,-10,0), CPoint3f(40,-10,0), CPoint3f(-10,40,0), CPoint3f(40,40,0));
     genererTriangulation();
 
+    // Gestion des mouvement à l'aide de la souris et du clavier
     glutMouseFunc(Mouse);
     glutMotionFunc(Motion);
     glutKeyboardFunc(Keybord);
     glutReshapeFunc(Reshape);
 
+    // On dessine :
     glutTimerFunc(mSPF,rotate,0);
     glutDisplayFunc(dessiner);
 
@@ -99,6 +104,16 @@ int main(int argc, char **argv) {
 
     /*------------------------------*/
    return 0;
+}
+
+/*************************************************
+************ Fonctions : *************************
+*************************************************/
+
+void rotate(int value) {
+    collection->deplaceTrains();
+    glutPostRedisplay();
+    glutTimerFunc(mSPF,rotate,value);
 }
 
 // Fonction qui sert à intitialiser notre projet

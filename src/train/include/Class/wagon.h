@@ -8,18 +8,26 @@
 #include <GL/glu.h>
 #include <GL/glut.h>
 
+/**
+* Défintion de la classe Wagon :
+* Elle possède :
+* - Onze variables
+* - Un constructeur
+* - Huit méthodes
+**/
+
 class Wagon {
     public:
-        int IDW;            // id du wagon
-        int IDA,IDPA;       // id de l'arc et celui du prochain point annexe
-        int IDAS;           // id de l'arc suivant
-        int IDSI,IDSF;      // id du SI et du SF
-        float H,V;          // orientation
-        float speed;        // vitesse
-        float D,Dmax;       // distance aux prochain point annexe
-        Vecteur *posIni;    // position du premier point du troncon
-        Vecteur *posVers;    // position du premier point du troncon
-        int color;          // couleur du wagon : 0 bleu, 1 rouge
+        int IDW;            // Id du wagon
+        int IDA,IDPA;       // Id de l'arc et celui du prochain point annexe
+        int IDAS;           // Id de l'arc suivant
+        int IDSI,IDSF;      // Id du SI et du SF
+        float H,V;          // Orientation
+        float speed;        // Vitesse
+        float D,Dmax;       // Distance aux prochain point annexe
+        Vecteur *posIni;    // Position du premier point du troncon
+        Vecteur *posVers;   // Position du premier point du troncon
+        int color;          // Couleur du wagon : 0 bleu, 1 rouge
         CGraphe *graphe;
 
     public:

@@ -5,6 +5,14 @@
 #include <GL/glu.h>
 #include <GL/glut.h>
 
+/**
+* Défintion de la classe Camera :
+* Elle possède :
+* - Neuf variables
+* - Un constructeur
+* - Sept méthodes
+**/
+
 class Camera {
     public:
         Vecteur posCam, posTar, Up, Left, Fwd;

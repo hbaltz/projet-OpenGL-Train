@@ -1,6 +1,13 @@
 #include "graphic.h"
 
+
+/*************************************************
+************ Fonctions principales : *************
+*************************************************/
+
+// Fonction qui va cherger les différentes textures utiles pour le projet :
 void chargerTextures() {
+    wagon = loadTexture("textures/wagon.jpg");
     herbe = loadTexture("textures/grass.jpg");
     neige = loadTexture("textures/snow.jpg");
     ciel  = loadTexture("textures/ciel.jpg");
@@ -9,14 +16,9 @@ void chargerTextures() {
     pont = loadTexture("textures/pont.jpg");
     gravier = loadTexture("textures/gravier.jpg");
     poutre_bois = loadTexture("textures/poutre_bois.jpg");
-    cote_0 = loadTexture("textures/cote_0.png");
-    face_0 = loadTexture("textures/face_0.png");
-    dessus_0 = loadTexture("textures/dessus_0.png");
-    cote_1 = loadTexture("textures/cote_1.png");
-    face_1 = loadTexture("textures/face_1.png");
-    dessus_1 = loadTexture("textures/dessus_1.png");
 }
 
+// Fonction principale qui va dessiner l'ensemble de notre projet :
 void dessiner() {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT) ;
 
@@ -32,10 +34,10 @@ void dessiner() {
     // Rails :
     dessinerVoies();
 
-    // arbres
+    // Arbres :
     dessinerArbres();
 
-    // ciel
+    // Ciel :
     glColor3d(1,1,1);
     glEnable(GL_TEXTURE_2D);
     glPushMatrix();
@@ -50,17 +52,17 @@ void dessiner() {
     glPopMatrix();
     glDisable(GL_TEXTURE_2D);
 
-    // trains
+    // Trains :
     glColor3f(1,0.2,0.1);
     glPushMatrix();
     glTranslatef(0,0,0.25);
     collection->drawTrains();
     glPopMatrix();
 
-
-    // herbe
+    // Herbe :
     dessinerTerrain();
 
+    // Pont :
     glColor3f(1,1,1);
     dessinerPont();
 
@@ -68,7 +70,9 @@ void dessiner() {
     glutSwapBuffers();
 }
 
-// Sous-fonctions :
+/*************************************************
+************ Sous-fonctions : ********************
+*************************************************/
 
 void dessinerArbres() {
     glColor3f(0.1,1,0.1);
