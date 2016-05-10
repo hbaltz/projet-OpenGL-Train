@@ -75,6 +75,9 @@ void dessiner() {
     // Lampadaires :
     dessinerLampadaires();
 
+    //Gares :
+    dessinerGares();
+
     // Pont :
     glColor3f(1,1,1);
     dessinerPont();
@@ -239,15 +242,41 @@ void dessinerLune(){
     glPopMatrix();
 }
 
+void dessinerGares(){
+    dessinerGare(12, 24, 0, 3, 3, 2);
+}
+
+
 /*************************************************
 ************ Fonctions élémentaires : ************
 *************************************************/
+
+void dessinerGare(float x, float y, float z, float t1, float t2, float h){
+    glPushMatrix();
+
+    glTranslatef(x,y,z);
+
+    dessinerPave(Vecteur(0,0,0), Vecteur(0,t2,0), Vecteur(t1,t2,0), Vecteur(t1,0,0), Vecteur(0,0,h), Vecteur(0,t2,h), Vecteur(t1,t2,h), Vecteur(t1,0,h));
+
+    glPopMatrix();
+}
 
 void dessinerRectangle(Vecteur a1, Vecteur b1, Vecteur c1, Vecteur d1, Vecteur a2, Vecteur b2, Vecteur c2, Vecteur d2) {
     dessinerTextureSansDeformation(a1,b1,c1,d1);
     dessinerTextureSansDeformation(a2,b2,c2,d2);
     dessinerTextureSansDeformation(a1,a2,b2,b1);
     dessinerTextureSansDeformation(c1,c2,d2,d1);
+
+}
+
+void dessinerPave(Vecteur a1, Vecteur b1, Vecteur c1, Vecteur d1, Vecteur a2, Vecteur b2, Vecteur c2, Vecteur d2) {
+    dessinerTextureSansDeformation(a1,b1,c1,d1);
+    dessinerTextureSansDeformation(a2,b2,c2,d2);
+    dessinerTextureSansDeformation(a1,a2,b2,b1);
+    dessinerTextureSansDeformation(c1,c2,d2,d1);
+
+    dessinerTextureSansDeformation(a1,a2,d2,d1);
+    dessinerTextureSansDeformation(b1,c1,c2,b1);
 
 }
 

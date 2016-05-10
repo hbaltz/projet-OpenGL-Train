@@ -35,11 +35,13 @@ void dessinerPont();
 void dessinerTerrain();
 void dessinerTunDon();
 void dessinerLune();
+void dessinerGares();
 
 // Fonctions élémentaires :
 
 void dessinerArbre(float x, float y, float z, float hauteur);
 void dessinerLampadaire(float x, float y, float z, float hauteur);
+void dessinerGare(float x, float y, float z, float t1, float t2, float h);
 void dessinerSapin(float x, float y, float z, float h1, float h2, float l);
 void dessinerSapinNeige(float x, float y, float z, float h1, float h2);
 void dessinerRail(Vecteur debut, Vecteur fin);
@@ -49,3 +51,4 @@ void dessinerTexture(GLuint texture, Vecteur a, Vecteur b, Vecteur c, Vecteur d)
 void dessinerTexture(Vecteur a, Vecteur b, Vecteur c, Vecteur d);
 void dessinerTextureSansDeformation(Vecteur a, Vecteur b, Vecteur c, Vecteur d);
 void dessinerRectangle(Vecteur a1, Vecteur b1, Vecteur c1, Vecteur d1, Vecteur a2, Vecteur b2, Vecteur c2, Vecteur d2);
+void dessinerPave(Vecteur a1, Vecteur b1, Vecteur c1, Vecteur d1, Vecteur a2, Vecteur b2, Vecteur c2, Vecteur d2);
