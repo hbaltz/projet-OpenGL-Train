@@ -5,6 +5,10 @@
 
 using namespace std;
 
+/*************************************
+************ Variables :**************
+*************************************/
+
 bool inListe(vector<int> vect, int ID) {
     for (int i = 0; i < vect.size(); i++) {
         if (vect.at(i) == ID) {return true;}
@@ -12,8 +16,17 @@ bool inListe(vector<int> vect, int ID) {
     return false;
 }
 
+
+/*************************************
+************ Constructeurs : *********
+*************************************/
+
 Collection::Collection() {
 }
+
+/*************************************
+************ Méthodes : **************
+*************************************/
 
 void Collection::addTrain(Train _train)
 {

@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="TchouTchou" />
+		<Option title="trainGl" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
@@ -80,7 +80,15 @@
 		<Unit filename="src/API/CPointAnnexe.cpp" />
 		<Unit filename="src/API/CSegment.cpp" />
 		<Unit filename="src/API/CSommet.cpp" />
+		<Unit filename="src/Class/Camera.cpp" />
+		<Unit filename="src/Class/Collection.cpp" />
+		<Unit filename="src/Class/Triangle.cpp" />
+		<Unit filename="src/Class/Triangulation.cpp" />
+		<Unit filename="src/Class/train.cpp" />
+		<Unit filename="src/Class/vecteur.cpp" />
+		<Unit filename="src/Class/wagon.cpp" />
 		<Unit filename="src/Librairies/sdlglutils.cpp" />
+		<Unit filename="src/graphic.cpp" />
 		<Unit filename="src/main.cpp" />
 		<Unit filename="src/utilitaires.cpp" />
 		<Extensions>

@@ -346,7 +346,7 @@ void dessinerRail(Vecteur debut, Vecteur fin) {
     glRotatef(90-V,0,1,0); // Decalage selon le segment ET pour dessiner à 90°
     GLUquadricObj *tronc;
     tronc = gluNewQuadric();
-    gluCylinder(tronc,0.03,0.03,l,30,30);
+     gluCylinder(tronc,0.03,0.03,l,30,30);
     gluDeleteQuadric(tronc);
     glPopMatrix();
 
@@ -365,6 +365,7 @@ void dessinerPoteau(float V, float r, float h, GLint s) {
 
     glPopMatrix();
 }
+
 
 void dessinerTexture(GLuint texture, Vecteur a, Vecteur b, Vecteur c, Vecteur d) {
     // Dessin de la texture avec initialisation

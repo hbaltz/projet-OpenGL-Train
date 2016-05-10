@@ -2157,7 +2157,7 @@
 	<GL/gl.h>
 	<SDL/SDL.h>
 
-1462730720 source:d:\cpp\projet-opengl-train\src\train\src\main.cpp
+1462897349 source:d:\cpp\projet-opengl-train\src\train\src\main.cpp
 	<iostream>
 	<GL/gl.h>
 	<GL/glu.h>
@@ -2167,14 +2167,19 @@
 	<stdlib.h>
 	<math.h>
 	<fstream>
-	<SDL/SDL.h>
+	"graphic.h"
 	"API/CDonneesGraphe.h"
 	"API/CGraphe.h"
 	"API/CSommet.h"
 	"Librairies/sdlglutils.h"
+	"Class/Camera.h"
 	"Class/vecteur.h"
 	"Class/Triangle.h"
 	"Class/Triangulation.h"
+	"Class/wagon.h"
+	"Class/train.h"
+	"Class/Collection.h"
+	"utilitaires.h"
 	"globales.h"
 
 1429729471 source:d:\cpp\projet-opengl-train\src\train\src\utilitaires.cpp
@@ -2281,31 +2286,31 @@
 	<ctgmath>
 	"../utilitaires.h"
 
-1462722076 source:d:\cpp\projet-opengl-train\src\train\src\class\triangle.cpp
+1462900184 source:d:\cpp\projet-opengl-train\src\train\src\class\triangle.cpp
 	"../../Include/Class/Triangle.h"
 
-1462722790 source:d:\cpp\projet-opengl-train\src\train\src\class\triangulation.cpp
+1462900202 source:d:\cpp\projet-opengl-train\src\train\src\class\triangulation.cpp
 	"../../Include/Class/Triangulation.h"
 
-1462722824 source:d:\cpp\projet-opengl-train\src\train\src\class\vecteur.cpp
+1462900228 source:d:\cpp\projet-opengl-train\src\train\src\class\vecteur.cpp
 	"../../Include/Class/vecteur.h"
 	<cmath>
 
-1431690563 source:d:\cpp\projet-opengl-train\src\train\src\class\camera.cpp
+1462900152 source:d:\cpp\projet-opengl-train\src\train\src\class\camera.cpp
 	"../../include/Class/Camera.h"
 	<cmath>
 	<iostream>
 
-1431690569 source:d:\cpp\projet-opengl-train\src\train\src\class\collection.cpp
+1462900007 source:d:\cpp\projet-opengl-train\src\train\src\class\collection.cpp
 	"../../Include/Class/Collection.h"
 	<cmath>
 	<iostream>
 
-1431690590 source:d:\cpp\projet-opengl-train\src\train\src\class\train.cpp
+1462899996 source:d:\cpp\projet-opengl-train\src\train\src\class\train.cpp
 	"../../Include/Class/train.h"
 	<iostream>
 
-1431693652 source:d:\cpp\projet-opengl-train\src\train\src\class\wagon.cpp
+1462900047 source:d:\cpp\projet-opengl-train\src\train\src\class\wagon.cpp
 	<time.h>
 	<stdlib.h>
 	<cmath>

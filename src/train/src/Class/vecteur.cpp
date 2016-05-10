@@ -1,9 +1,10 @@
 #include "../../Include/Class/vecteur.h"
 #include <cmath>
 
-/**
-* Constructeurs :
-**/
+
+/*************************************
+************ Constructeurs : *********
+*************************************/
 
 Vecteur::Vecteur(float x, float y, float z)
 {
@@ -29,9 +30,10 @@ Vecteur::Vecteur()
 
 }
 
-/**
-* Opérateurs :
-**/
+
+/*************************************
+************ Opérateurs : ************
+*************************************/
 
 Vecteur& Vecteur::operator+=(Vecteur const& vect)
 {
@@ -75,9 +77,10 @@ Vecteur& Vecteur::operator-(Vecteur const& vect)
     return *V;
 }
 
-/**
-* Méthodes :
-**/
+
+/*************************************
+************ Méthodes : **************
+*************************************/
 
 Vecteur Vecteur::prodVect(Vecteur const& vect)
 {

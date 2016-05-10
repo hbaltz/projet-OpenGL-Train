@@ -1,8 +1,9 @@
 #include "../../Include/Class/Triangle.h"
 
-/**
-* Constructeurs :
-**/
+
+/*************************************
+************ Constructeurs : *********
+*************************************/
 
 // Constructeur à l'aide de points 3D :
 Triangle::Triangle(CPoint3f _a, CPoint3f _b, CPoint3f _c,  GLuint *_texture) {
@@ -27,9 +28,9 @@ Triangle::~Triangle() {
     //dtor
 }
 
-/**
-* Méthodes :
-**/
+/*************************************
+************ Méthodes : **************
+*************************************/
 
 // Fonction qui sert à afficher les sommets composants le triangles sous forme textuelle
 string Triangle::toString() {

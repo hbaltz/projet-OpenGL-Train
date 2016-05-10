@@ -1,9 +1,9 @@
 #include "../../Include/Class/Triangulation.h"
 
-/**
-* Constructeurs :
-**/
 
+/*************************************
+************ Constructeurs : *********
+*************************************/
 Triangulation::Triangulation()
 {
     //ctor
@@ -14,9 +14,10 @@ Triangulation::~Triangulation()
     //dtor
 }
 
-/**
-* Méthodes :
-**/
+
+/*************************************
+************ Méthodes : **************
+*************************************/
 
 void Triangulation::ajouterTriangle(Triangle triangle) {
     // On ajoute le triangle à la liste :

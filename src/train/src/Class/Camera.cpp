@@ -8,6 +8,10 @@
 using namespace std;
 int px=0,py=0,mvt;
 
+/*************************************
+************ Constructeurs : *********
+*************************************/
+
 Camera::Camera(float xCam, float yCam, float zCam, float xTar, float yTar, float zTar) {
     // positions initiales
     posCam = Vecteur(xCam,yCam,zCam);
@@ -20,6 +24,10 @@ Camera::Camera(float xCam, float yCam, float zCam, float xTar, float yTar, float
     vue = -1;
     nb_train = 0;
 }
+
+/*************************************
+************ Méthodes : **************
+*************************************/
 
 void Camera::updateAngles() {
     // différence de position

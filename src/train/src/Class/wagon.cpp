@@ -11,9 +11,18 @@
 
 using namespace std;
 
+/*************************************
+************ Variables : *************
+*************************************/
+
 int rand_ab(int a, int b) {
     return rand()%(b-a) + a;
 }
+
+
+/*************************************
+************ Constructeurs : *********
+*************************************/
 
 Wagon::Wagon(int _IDW, int _IDA, CGraphe *_graphe, float _speed, int _color) {
     IDW = _IDW;
@@ -34,6 +43,10 @@ Wagon::Wagon(int _IDW, int _IDA, CGraphe *_graphe, float _speed, int _color) {
 
     changeTroncon();
 }
+
+/*************************************
+************ Méthodes : **************
+*************************************/
 
 void Wagon::changeTroncon() {
     CArc arc = graphe->list_arc[IDA];
@@ -90,6 +103,17 @@ void Wagon::drawWagon() {
     glRotatef(-V, 0, 1, 0);
     glTranslatef(D, 0, 0.30);
 
+    glColor3d(1,1,1);
+    glEnable(GL_TEXTURE_2D);
+    glRotated(90,0,1,0);
+    GLUquadricObj *wag;
+    wag = gluNewQuadric();
+    gluQuadricTexture(wag,GL_TRUE);
+    glBindTexture(GL_TEXTURE_2D, bois);
+    gluCylinder(wag,0.15,0.15,0.9,100,100);
+    gluDeleteQuadric(wag);
+
+/*
     GLuint face, cote, dessus;
     // On dessine sur les 6 faces :
     if (color == 0) {
@@ -107,6 +131,7 @@ void Wagon::drawWagon() {
     dessinerTexture(cote, Vecteur(-0.375, 0.25, -0.25), Vecteur(-0.375, 0.25, 0.25), Vecteur(0.375, 0.25, 0.25), Vecteur(0.375, 0.25, -0.25)); // Cote 2
     dessinerTexture(dessus, Vecteur(-0.375, -0.25, -0.25), Vecteur(-0.375, 0.25, -0.25), Vecteur(0.375, 0.25, -0.25), Vecteur(0.375, -0.25, -0.25)); // Dessous
     dessinerTexture(dessus, Vecteur(-0.375, -0.25, 0.25), Vecteur(-0.375, 0.25, 0.25), Vecteur(0.375, 0.25, 0.25), Vecteur(0.375, -0.25, 0.25)); // Dessus
+*/
 
     glPopMatrix();
 }

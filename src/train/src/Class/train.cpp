@@ -3,6 +3,11 @@
 #define LONG_WAG 1.0
 using namespace std;
 
+
+/*************************************
+************ Constructeurs : *********
+*************************************/
+
 Train::Train(int _IDT, int _NBW, float _speed, int _IDA, CGraphe *_graphe, int _color) {
     float D;
     for (int _IDW = 0; _IDW < _NBW; _IDW++) {
@@ -25,6 +30,10 @@ Train::Train(Train const& tr) : IDT(tr.IDT), NBW(tr.NBW), speed(tr.speed) {
     wagons = tr.wagons;
     graphe = tr.graphe;
 }
+
+/*************************************
+************ Méthodes : **************
+*************************************/
 
 void Train::deplace() {
     wagons[0].deplace();
