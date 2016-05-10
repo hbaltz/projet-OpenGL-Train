@@ -32,7 +32,7 @@ using namespace std;
 *************************************************/
 
 // Déclaration des images pour les textures :
-GLuint wagon, herbe, neige, ciel, bois, feuille, pont, gravier, poutre_bois, tunnel, eau;
+GLuint wagon, herbe, neige, ciel, bois, feuille, pont, gravier, poutre_bois, eau, sol, text_lune, lampadaire;
 
 // Caméra :
 Camera *cam;

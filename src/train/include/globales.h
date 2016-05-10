@@ -15,6 +15,6 @@ extern CGraphe graphe;
 extern Triangulation triangulation;
 
 // Les images du graph sont globales :
-extern GLuint wagon, herbe, neige, ciel, bois, feuille, pont, gravier, poutre_bois, tunnel, eau;
+extern GLuint wagon, herbe, neige, ciel, bois, feuille, pont, gravier, poutre_bois, eau, sol, text_lune, lampadaire;
 
 #endif // GLOALES_H

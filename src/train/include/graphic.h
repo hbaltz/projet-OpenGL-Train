@@ -30,13 +30,16 @@ void dessiner();
 
 void dessinerVoies();
 void dessinerArbres();
+void dessinerLampadaires();
 void dessinerPont();
 void dessinerTerrain();
 void dessinerTunDon();
+void dessinerLune();
 
 // Fonctions élémentaires :
 
 void dessinerArbre(float x, float y, float z, float hauteur);
+void dessinerLampadaire(float x, float y, float z, float hauteur);
 void dessinerSapin(float x, float y, float z, float h1, float h2, float l);
 void dessinerSapinNeige(float x, float y, float z, float h1, float h2);
 void dessinerRail(Vecteur debut, Vecteur fin);

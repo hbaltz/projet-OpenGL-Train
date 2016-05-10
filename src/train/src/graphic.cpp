@@ -16,8 +16,10 @@ void chargerTextures() {
     pont = loadTexture("textures/pont.jpg");
     gravier = loadTexture("textures/gravier.jpg");
     poutre_bois = loadTexture("textures/poutre_bois.jpg");
-    tunnel = loadTexture("textures/tunnel.jpg");
     eau = loadTexture("textures/eau.jpg");
+    sol = loadTexture("textures/sol.jpg");
+    text_lune = loadTexture("textures/lune.jpg");
+    lampadaire = loadTexture("textures/lampadaire.jpg");
 }
 
 // Fonction principale qui va dessiner l'ensemble de notre projet :
@@ -67,6 +69,12 @@ void dessiner() {
     // Donnut :
     dessinerTunDon();
 
+    //Lune :
+    dessinerLune();
+
+    // Lampadaires :
+    dessinerLampadaires();
+
     // Pont :
     glColor3f(1,1,1);
     dessinerPont();
@@ -102,6 +110,14 @@ void dessinerArbres() {
     dessinerSapinNeige(13,18, 0, 3.8, 3.1);
     dessinerSapinNeige(11,16.2, 0, 4.4, 3.2);
 */
+}
+
+void dessinerLampadaires() {
+    dessinerLampadaire(1,1,-0.2,2);
+    dessinerLampadaire(10,5,-0.2,2);
+    dessinerLampadaire(15,6,-0.2,2);
+    dessinerLampadaire(4.5,8,-0.2,2);
+    dessinerLampadaire(20,20,-0.2,2);
 }
 
 void dessinerTerrain() {
@@ -195,7 +211,6 @@ void dessinerPont() {
 }
 
 void dessinerTunDon() {
-    glPushMatrix();
 
     dessinerDonnut(2.3,3,0.3);
     dessinerDonnut(2.2,3.5,0.3);
@@ -203,6 +218,23 @@ void dessinerTunDon() {
     dessinerDonnut(2,4.5,0.3);
     dessinerDonnut(1.9,5,0.3);
     dessinerDonnut(1.8,5.5,0.3);
+}
+
+void dessinerLune(){
+    glPushMatrix();
+
+    glTranslatef(5,5,20);
+
+    glColor3d(1,1,1);
+    glEnable(GL_TEXTURE_2D);
+    GLUquadricObj *lune;
+    lune = gluNewQuadric();
+    gluQuadricTexture(lune,GL_TRUE);
+    glBindTexture(GL_TEXTURE_2D, text_lune);
+    gluSphere(lune,5,50,50);
+    glRotated(180,1,0,0);
+    gluDeleteQuadric(lune);
+    glDisable(GL_TEXTURE_2D);
 
     glPopMatrix();
 }
@@ -332,6 +364,32 @@ void dessinerArbre(float x, float y, float z, float hauteur) {
     glPopMatrix();
 }
 
+void dessinerLampadaire(float x, float y, float z, float hauteur){
+    glPushMatrix();
+    glTranslatef(x,y,z);
+
+    glColor3d(0.8,0.8,0.8);
+    GLUquadricObj *tronc;
+    tronc = gluNewQuadric();
+    gluCylinder(tronc,0.075,0.075,hauteur,100,100);
+    gluDeleteQuadric(tronc);
+
+    glTranslatef(0,0,hauteur);
+    glColor3d(1,1,1);
+
+    glEnable(GL_TEXTURE_2D);
+
+    GLUquadricObj *sphere;
+    sphere = gluNewQuadric();
+    gluQuadricTexture(sphere,GL_TRUE);
+    glBindTexture(GL_TEXTURE_2D, lampadaire);
+    gluSphere(sphere,0.3,50,50);
+    gluDeleteQuadric(sphere);
+
+    glDisable(GL_TEXTURE_2D);
+    glPopMatrix();
+}
+
 void dessinerRail(Vecteur debut, Vecteur fin) {
     // On calcul l'orientation de la caméra pour ce segment :
     Vecteur delta = fin - debut;
@@ -400,7 +458,7 @@ void dessinerDonnut(float x, float y, float z) {
 
     glEnable(GL_TEXTURE_2D);
 
-    glColor3d(1,0.4,0.1);
+    glColor3d(1,0.3,0.1);
     glutWireTorus(0.3 ,1.1, 10 , 100);
 
     glDisable(GL_TEXTURE_2D);
