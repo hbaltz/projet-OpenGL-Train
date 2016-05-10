@@ -51,18 +51,18 @@ Wagon::Wagon(int _IDW, int _IDA, CGraphe *_graphe, float _speed, int _color) {
 void Wagon::changeTroncon() {
     CArc arc = graphe->list_arc[IDA];
     Vecteur from,to;
-    // premier point de l'arc
+    // Premier point de l'arc
     if (IDPA==arc.list_point_annexe[0]) {
         from = Vecteur(graphe->list_sommet[IDSI].X,graphe->list_sommet[IDSI].Y,graphe->list_sommet[IDSI].Z);
         to = Vecteur(graphe->list_point_annexe[IDPA].X,graphe->list_point_annexe[IDPA].Y,graphe->list_point_annexe[IDPA].Z);
 
         IDPA++;
-    } else { // dernier point annexe (changement d'arc)
+    } else { // Dernier point annexe (changement d'arc)
         if (IDPA == arc.list_point_annexe.size()+arc.list_point_annexe[0]) {
             from = Vecteur(graphe->list_point_annexe[IDPA-1].X,graphe->list_point_annexe[IDPA-1].Y,graphe->list_point_annexe[IDPA-1].Z);
             to = Vecteur(graphe->list_sommet[IDSF].X,graphe->list_sommet[IDSF].Y,graphe->list_sommet[IDSF].Z);
 
-            // changement d'arc
+            // Changement d'arc
             CSommet S = graphe->list_sommet[IDSF];
             if(IDW==0) {
                 int nran = rand_ab(0,S.id_arc_sortant.size());
