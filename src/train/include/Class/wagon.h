@@ -27,11 +27,10 @@ class Wagon {
         float D,Dmax;       // Distance aux prochain point annexe
         Vecteur *posIni;    // Position du premier point du troncon
         Vecteur *posVers;   // Position du premier point du troncon
-        int color;          // Couleur du wagon : 0 bleu, 1 rouge
         CGraphe *graphe;
 
     public:
-        Wagon(int _IDW, int _IDA, CGraphe *_graphe, float _speed, int color);
+        Wagon(int _IDW, int _IDA, CGraphe *_graphe, float _speed);
         void changeTroncon();
         void drawWagon();
         void deplace();

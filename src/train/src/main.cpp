@@ -81,9 +81,9 @@ int main(int argc, char **argv) {
 
     // Création de la collection et ajout des trains
     collection = new Collection;
-    collection->addTrain(Train(0, 5, 0.15, 0, &graphe, 0)); cam->nb_train++;
-    collection->addTrain(Train(1, 4, 0.05, 2, &graphe, 0)); cam->nb_train++;
-    collection->addTrain(Train(2, 3, 0.075, 4, &graphe, 1)); cam->nb_train++;
+    collection->addTrain(Train(0, 5, 0.15, 0, &graphe)); cam->nb_train++;
+    collection->addTrain(Train(1, 4, 0.05, 2, &graphe)); cam->nb_train++;
+    collection->addTrain(Train(2, 3, 0.075, 4, &graphe)); cam->nb_train++;
 
     // On effectue la triangulation : (hors points du pont)
     //triangulation.ajouterTriangle(Triangle(CPoint3f(), CPoint3f(), CPoint3f()));

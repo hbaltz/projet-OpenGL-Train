@@ -27,7 +27,7 @@ public:
     CGraphe *graphe;            // Graphe
 
 public:
-    Train(int _IDT, int NBW, float _speed, int _IDA, CGraphe *_graphe, int color);
+    Train(int _IDT, int NBW, float _speed, int _IDA, CGraphe *_graphe);
     Train(Train const& tr);
     void deplace();
     void drawTrain();

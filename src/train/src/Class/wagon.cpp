@@ -24,12 +24,11 @@ int rand_ab(int a, int b) {
 ************ Constructeurs : *********
 *************************************/
 
-Wagon::Wagon(int _IDW, int _IDA, CGraphe *_graphe, float _speed, int _color) {
+Wagon::Wagon(int _IDW, int _IDA, CGraphe *_graphe, float _speed) {
     IDW = _IDW;
     IDA = _IDA;
     IDAS = -1;
     graphe = _graphe;
-    color = _color;
 
     IDSI = graphe->list_arc[IDA].id_sommet_ini;
     IDSF = graphe->list_arc[IDA].id_sommet_fin;

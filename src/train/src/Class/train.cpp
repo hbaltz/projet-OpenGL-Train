@@ -8,10 +8,10 @@ using namespace std;
 ************ Constructeurs : *********
 *************************************/
 
-Train::Train(int _IDT, int _NBW, float _speed, int _IDA, CGraphe *_graphe, int _color) {
+Train::Train(int _IDT, int _NBW, float _speed, int _IDA, CGraphe *_graphe) {
     float D;
     for (int _IDW = 0; _IDW < _NBW; _IDW++) {
-        Wagon wag(_IDW, _IDA, _graphe, _speed, _color);
+        Wagon wag(_IDW, _IDA, _graphe, _speed);
         D = (_NBW - _IDW) * LONG_WAG;
         if (D > wag.Dmax) {
             float Dmax_temp = wag.Dmax;
