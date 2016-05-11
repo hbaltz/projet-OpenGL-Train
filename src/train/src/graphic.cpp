@@ -51,7 +51,7 @@ void dessiner() {
     // Herbe :
     dessinerTerrain();
 
-    // Tuunel-Donnut :
+    // Tunel-Donnut :
     dessinerTunDon();
 
     // Lune :
@@ -362,7 +362,7 @@ void dessinerArbre(float x, float y, float z, float hauteur) {
 
 // Fonction pour tracer un arbre
 void dessinerLampadaire(float x, float y, float z, float hauteur){
-    // Un lampadaire est un cylindre sur lequelle on dessine une sphère :
+    // Un lampadaire est un cylindre sur lequelle on dessine une sphère lumineuse :
 
     glPushMatrix();
     glTranslatef(x,y,z);
@@ -378,12 +378,18 @@ void dessinerLampadaire(float x, float y, float z, float hauteur){
 
     glEnable(GL_TEXTURE_2D);
 
+    glEnable (GL_LIGHTING);
+    glEnable (GL_LIGHT0);
+
     GLUquadricObj *sphere;
     sphere = gluNewQuadric();
     gluQuadricTexture(sphere,GL_TRUE);
     glBindTexture(GL_TEXTURE_2D, lampadaire);
     gluSphere(sphere,0.3,50,50);
     gluDeleteQuadric(sphere);
+
+    glDisable (GL_LIGHT0);
+    glDisable (GL_LIGHTING);
 
     glDisable(GL_TEXTURE_2D);
     glPopMatrix();
