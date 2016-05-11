@@ -29,6 +29,7 @@ void dessiner() {
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
 
+    // On positionne la caméra :
     Vecteur ecart(0,0,1);
     if (cam->vue != -1) {
         cam->changerPosition(collection->listeTrain[cam->vue].wagons[1].position(ecart), collection->listeTrain[cam->vue].wagons[0].position(ecart));
@@ -42,40 +43,24 @@ void dessiner() {
     dessinerArbres();
 
     // Ciel :
-    glColor3d(1,1,1);
-    glEnable(GL_TEXTURE_2D);
-    glPushMatrix();
-    glTranslatef(12.205,10.065,0.0);
-    // glutSolidSphere(16,100,100);
-    GLUquadricObj *sphere;
-    sphere = gluNewQuadric();
-    gluQuadricTexture(sphere,GL_TRUE);
-    glBindTexture(GL_TEXTURE_2D,ciel);
-    gluSphere(sphere,20,100,100);
-    gluDeleteQuadric(sphere);
-    glPopMatrix();
-    glDisable(GL_TEXTURE_2D);
+    dessinerCiel();
 
     // Trains :
-    glColor3f(1,0.2,0.1);
-    glPushMatrix();
-    glTranslatef(0,0,0.25);
-    collection->drawTrains();
-    glPopMatrix();
+    dessinerTrains();
 
     // Herbe :
     dessinerTerrain();
 
-    // Donnut :
+    // Tuunel-Donnut :
     dessinerTunDon();
 
-    //Lune :
+    // Lune :
     dessinerLune();
 
     // Lampadaires :
     dessinerLampadaires();
 
-    //Gares :
+    // Gares :
     dessinerGares();
 
     // Pont :
@@ -90,66 +75,7 @@ void dessiner() {
 ************ Sous-fonctions : ********************
 *************************************************/
 
-void dessinerArbres() {
-    glColor3f(0.1,1,0.1);
-
-    //dessinerArbre(-1,5,0,2.2);
-    dessinerArbre(4,3,0,2.4);
-    dessinerArbre(8,14,0,1.9);
-    dessinerArbre(-1,14,0,2.2);
-    dessinerArbre(0,12,0,2.1);
-    dessinerArbre(-2.5,13.8,0,2.3);
-    dessinerArbre(2,11.7,0,2);
-    dessinerArbre(15,-4,0,2.3);
-    dessinerArbre(17,5,0,2.25);
-    dessinerArbre(20,15,0,2.0);
-
-    dessinerSapin(1,14,0,0.75,2.25,0.5);
-    dessinerSapin(20,13.5,0,1.25,2,0.5);
-    dessinerSapin(18,14.5,0,0.75,2.25,0.5);
-/*
-    dessinerSapinNeige(11,18, 0, 4.5, 3.5);
-    dessinerSapinNeige(14.4,15.5, 0, 3.5, 2.5);
-    dessinerSapinNeige(13,18, 0, 3.8, 3.1);
-    dessinerSapinNeige(11,16.2, 0, 4.4, 3.2);
-*/
-}
-
-void dessinerLampadaires() {
-    dessinerLampadaire(1,1,-0.2,2);
-    dessinerLampadaire(10,5,-0.2,2);
-    dessinerLampadaire(15,6,-0.2,2);
-    dessinerLampadaire(4.5,8,-0.2,2);
-    dessinerLampadaire(20,20,-0.2,2);
-}
-
-void dessinerTerrain() {
-    // Dessin à z=0 :
-    glColor3d(1,1,1);
-    glEnable(GL_TEXTURE_2D);
-    glBindTexture(GL_TEXTURE_2D, herbe);
-    glBegin(GL_QUADS);
-        glTexCoord2d(-10,-10); glVertex3d(-10,-10,0); glColor3ub(255,255,255);
-        glTexCoord2d(40,-10);  glVertex3d(40,-10,0);  glColor3ub(255,255,255);
-        glTexCoord2d(40,40);   glVertex3d(40,40,0);   glColor3ub(255,255,255);
-        glTexCoord2d(-10,40);  glVertex3d(-10,40,0);  glColor3ub(255,255,255);
-    glEnd();
-    glDisable(GL_TEXTURE_2D);
-
-    // Dessin du relief :
-    glColor3d(1,1,1);
-    glEnable(GL_TEXTURE_2D);
-    for (int i = 0; i < triangulation.triangles.size(); i++) {
-        Triangle tri = triangulation.triangles[i];
-        glBindTexture(GL_TEXTURE_2D, *tri.texture);
-        glBegin(GL_TRIANGLES); // on va dessiner des triangles
-            glTexCoord2f(tri.a.X, tri.a.Y); glVertex3f(tri.a.X, tri.a.Y, tri.a.Z);
-            glTexCoord2f(tri.b.X, tri.b.Y); glVertex3f(tri.b.X, tri.b.Y, tri.b.Z);
-            glTexCoord2f(tri.c.X, tri.c.Y); glVertex3f(tri.c.X, tri.c.Y, tri.c.Z);
-        glEnd();
-    }
-}
-
+// Fonction qui dessine les voies
 void dessinerVoies() {
     glColor3f(1,1,1);
     Vecteur debut, fin;
@@ -185,7 +111,139 @@ void dessinerVoies() {
     }
 }
 
+// Fonction qui dessine l'ensemble des arbres
+void dessinerArbres() {
+    glColor3f(0.1,1,0.1);
+
+    //dessinerArbre(-1,5,0,2.2);
+    dessinerArbre(4,3,0,2.4);
+    dessinerArbre(8,14,0,1.9);
+    dessinerArbre(-1,14,0,2.2);
+    dessinerArbre(0,12,0,2.1);
+    dessinerArbre(-2.5,13.8,0,2.3);
+    dessinerArbre(2,11.7,0,2);
+    dessinerArbre(15,-4,0,2.3);
+    dessinerArbre(17,5,0,2.25);
+    dessinerArbre(20,15,0,2.0);
+
+    dessinerSapin(1,14,0,0.75,2.25,0.5);
+    dessinerSapin(20,13.5,0,1.25,2,0.5);
+    dessinerSapin(18,14.5,0,0.75,2.25,0.5);
+}
+
+// Fonction qui dessine le ciel
+void dessinerCiel(){
+    // Le ciel est une très grande sphère entourant notre scène
+    // A laquelle on applique une texture
+
+    glColor3d(1,1,1);
+    glEnable(GL_TEXTURE_2D);
+
+    glPushMatrix();
+
+    glTranslatef(12.205,10.065,0.0);
+
+    GLUquadricObj *sphere;
+    sphere = gluNewQuadric();
+    gluQuadricTexture(sphere,GL_TRUE);
+    glBindTexture(GL_TEXTURE_2D,ciel);
+    gluSphere(sphere,20,100,100);
+
+    gluDeleteQuadric(sphere);
+
+    glPopMatrix();
+
+    glDisable(GL_TEXTURE_2D);
+}
+
+// Fonction qui dessine les trains
+void dessinerTrains(){
+    // Pour dessiner els trains on fait appel à la fonction drawTrains() de l'objet collection
+    glColor3f(1,0.2,0.1);
+    glPushMatrix();
+    glTranslatef(0,0,0.25);
+    collection->drawTrains();
+    glPopMatrix();
+}
+
+// Fonction qui dessine le terrain
+void dessinerTerrain() {
+    // Dessin à z=0 :
+    glColor3d(1,1,1);
+    glEnable(GL_TEXTURE_2D);
+    glBindTexture(GL_TEXTURE_2D, herbe);
+    glBegin(GL_QUADS);
+        glTexCoord2d(-10,-10); glVertex3d(-10,-10,0); glColor3ub(255,255,255);
+        glTexCoord2d(40,-10);  glVertex3d(40,-10,0);  glColor3ub(255,255,255);
+        glTexCoord2d(40,40);   glVertex3d(40,40,0);   glColor3ub(255,255,255);
+        glTexCoord2d(-10,40);  glVertex3d(-10,40,0);  glColor3ub(255,255,255);
+    glEnd();
+    glDisable(GL_TEXTURE_2D);
+
+    // Dessin du relief :
+    glColor3d(1,1,1);
+    glEnable(GL_TEXTURE_2D);
+    for (int i = 0; i < triangulation.triangles.size(); i++) {
+        Triangle tri = triangulation.triangles[i];
+        glBindTexture(GL_TEXTURE_2D, *tri.texture);
+        glBegin(GL_TRIANGLES); // On va dessiner des triangles
+            glTexCoord2f(tri.a.X, tri.a.Y); glVertex3f(tri.a.X, tri.a.Y, tri.a.Z);
+            glTexCoord2f(tri.b.X, tri.b.Y); glVertex3f(tri.b.X, tri.b.Y, tri.b.Z);
+            glTexCoord2f(tri.c.X, tri.c.Y); glVertex3f(tri.c.X, tri.c.Y, tri.c.Z);
+        glEnd();
+    }
+}
+
+// Fonction qui dessine un tunnel à partir de donnut
+void dessinerTunDon() {
+    // Le tunnel est une succesion de donnuts :
+
+    dessinerDonnut(2.3,3,0.3);
+    dessinerDonnut(2.2,3.5,0.3);
+    dessinerDonnut(2.1,4,0.3);
+    dessinerDonnut(2,4.5,0.3);
+    dessinerDonnut(1.9,5,0.3);
+    dessinerDonnut(1.8,5.5,0.3);
+}
+
+// Fonction qui dessine la lune :
+void dessinerLune(){
+    glPushMatrix();
+
+    glTranslatef(5,5,20);
+
+    glColor3d(1,1,1);
+    glEnable(GL_TEXTURE_2D);
+    GLUquadricObj *lune;
+    lune = gluNewQuadric();
+    gluQuadricTexture(lune,GL_TRUE);
+    glBindTexture(GL_TEXTURE_2D, text_lune);
+    gluSphere(lune,5,50,50);
+    glRotated(180,1,0,0);
+    gluDeleteQuadric(lune);
+    glDisable(GL_TEXTURE_2D);
+
+    glPopMatrix();
+}
+
+
+// Fonction qui dessine les lamapdaires :
+void dessinerLampadaires() {
+    dessinerLampadaire(1,1,-0.2,2);
+    dessinerLampadaire(10,5,-0.2,2);
+    dessinerLampadaire(15,6,-0.2,2);
+    dessinerLampadaire(4.5,8,-0.2,2);
+    dessinerLampadaire(20,20,-0.2,2);
+}
+
+// Fonction qui dessine les gares :
+void dessinerGares(){
+    dessinerGare(12, 24, 0, 3, 3, 2);
+}
+
+// Fonction qui dessine le pont :
 void dessinerPont() {
+    // Le pont est composé de trois pavé que l'on trace à a'aide de dessinerRectangle()
 
     glColor3d(1,1,1);
     glEnable(GL_TEXTURE_2D);
@@ -207,50 +265,14 @@ void dessinerPont() {
         Vecteur(14,2.5,-0.25), Vecteur(13,2.5,1.75), Vecteur(13,3.5,1.75), Vecteur(14,3.5,-0.25)
     );
 
-    //dessinerTexture(Vecteur(13,2.5,2), Vecteur(11,2.5,2), Vecteur(11,3.5,2), Vecteur(13,3.5,2));
-    //dessinerTexture(Vecteur(14,2.5,0), Vecteur(13,2.5,2), Vecteur(13,3.5,2), Vecteur(14,3.5,0));
-
     glDisable(GL_TEXTURE_2D);
 }
-
-void dessinerTunDon() {
-
-    dessinerDonnut(2.3,3,0.3);
-    dessinerDonnut(2.2,3.5,0.3);
-    dessinerDonnut(2.1,4,0.3);
-    dessinerDonnut(2,4.5,0.3);
-    dessinerDonnut(1.9,5,0.3);
-    dessinerDonnut(1.8,5.5,0.3);
-}
-
-void dessinerLune(){
-    glPushMatrix();
-
-    glTranslatef(5,5,20);
-
-    glColor3d(1,1,1);
-    glEnable(GL_TEXTURE_2D);
-    GLUquadricObj *lune;
-    lune = gluNewQuadric();
-    gluQuadricTexture(lune,GL_TRUE);
-    glBindTexture(GL_TEXTURE_2D, text_lune);
-    gluSphere(lune,5,50,50);
-    glRotated(180,1,0,0);
-    gluDeleteQuadric(lune);
-    glDisable(GL_TEXTURE_2D);
-
-    glPopMatrix();
-}
-
-void dessinerGares(){
-    dessinerGare(12, 24, 0, 3, 3, 2);
-}
-
 
 /*************************************************
 ************ Fonctions élémentaires : ************
 *************************************************/
 
+// Fonction pour dessiner une gare dont un coin est positionné en (x,y,z) de taille t1xt2xh
 void dessinerGare(float x, float y, float z, float t1, float t2, float h){
     glPushMatrix();
 
@@ -261,14 +283,15 @@ void dessinerGare(float x, float y, float z, float t1, float t2, float h){
     glPopMatrix();
 }
 
+// Fonction pour dessinr un pavé non fermé
 void dessinerRectangle(Vecteur a1, Vecteur b1, Vecteur c1, Vecteur d1, Vecteur a2, Vecteur b2, Vecteur c2, Vecteur d2) {
     dessinerTextureSansDeformation(a1,b1,c1,d1);
     dessinerTextureSansDeformation(a2,b2,c2,d2);
     dessinerTextureSansDeformation(a1,a2,b2,b1);
     dessinerTextureSansDeformation(c1,c2,d2,d1);
-
 }
 
+// Fonction pour dessinr un pavé fermé
 void dessinerPave(Vecteur a1, Vecteur b1, Vecteur c1, Vecteur d1, Vecteur a2, Vecteur b2, Vecteur c2, Vecteur d2) {
     dessinerTextureSansDeformation(a1,b1,c1,d1);
     dessinerTextureSansDeformation(a2,b2,c2,d2);
@@ -277,71 +300,12 @@ void dessinerPave(Vecteur a1, Vecteur b1, Vecteur c1, Vecteur d1, Vecteur a2, Ve
 
     dessinerTextureSansDeformation(a1,a2,d2,d1);
     dessinerTextureSansDeformation(b1,c1,c2,b1);
-
 }
 
-void dessinerSapinNeige(float x, float y, float z, float h1, float h2) {
-
-    glPushMatrix();
-    glTranslatef(x,y,z);
-
-    float rt = 0.05; // rayon du tronc
-
-    glColor3d(1,1,1);
-    glEnable(GL_TEXTURE_2D);
-    GLUquadricObj *tronc;
-    tronc = gluNewQuadric();
-    gluQuadricTexture(tronc,GL_TRUE);
-    glBindTexture(GL_TEXTURE_2D, bois);
-    gluCylinder(tronc,rt,rt,h1,50,50);
-    gluDeleteQuadric(tronc);
-
-
-    float h3 = h1 - h2; // hauteur avec des branches
-    //float hb = rt; // hauteur d'une branche, augmentation du rayon (= rt)
-    int nb_branche = floor(h3 / (2*rt))+1; // nb de branche
-
-    glTranslatef(0,0,h1);
-    glPushMatrix();
-    glTranslatef(0,0,rt);
-    int slide = 40; // nb de slides pour les branches
-
-    // On dessine les cercles verts des branches :
-
-    GLUquadricObj *branche;
-    branche = gluNewQuadric();
-    gluQuadricTexture(branche,GL_TRUE);
-    glBindTexture(GL_TEXTURE_2D, feuille);
-
-    for (int i = 0; i <= nb_branche; i++) {
-        float dri = rt*pow(i,1/1.2);
-        gluDisk(branche, 0, dri, slide, slide);
-        glTranslatef(0,0,-rt);
-        gluDisk(branche, 0, dri+rt, slide, slide);
-        glTranslatef(0,0,-rt);
-    }
-    gluDeleteQuadric(branche);
-    glPopMatrix();
-
-    // On dessiner les cylindres blancs des branches recouvertes de neige :
-
-    GLUquadricObj *branche_neige;
-    branche_neige = gluNewQuadric();
-    gluQuadricTexture(branche_neige,GL_TRUE);
-    glBindTexture(GL_TEXTURE_2D, neige);
-
-    for (int i = 0; i <= nb_branche; i++) {
-        float dri = rt*pow(i,1/1.2);
-        gluCylinder(branche_neige, dri+rt, dri, rt, slide, slide);
-        glTranslatef(0,0,-2*rt);
-    }
-    gluDeleteQuadric(branche_neige);
-
-    glDisable(GL_TEXTURE_2D);
-    glPopMatrix();
-}
-
+// Fonction pour tracer un sapin :
 void dessinerSapin(float x, float y, float z, float h1, float h2, float l) {
+    // Un sapin est un cylindre sur lequelle on dessine un cône :
+
     glPushMatrix();
     glTranslatef(x,y,z);
 
@@ -367,7 +331,10 @@ void dessinerSapin(float x, float y, float z, float h1, float h2, float l) {
     glPopMatrix();
 }
 
+// Fonction pour tracer un arbre
 void dessinerArbre(float x, float y, float z, float hauteur) {
+    // Un arbre est un cylindre sur lequelle on dessine une sphère :
+
     glPushMatrix();
     glTranslatef(x,y,z);
 
@@ -393,7 +360,10 @@ void dessinerArbre(float x, float y, float z, float hauteur) {
     glPopMatrix();
 }
 
+// Fonction pour tracer un arbre
 void dessinerLampadaire(float x, float y, float z, float hauteur){
+    // Un lampadaire est un cylindre sur lequelle on dessine une sphère :
+
     glPushMatrix();
     glTranslatef(x,y,z);
 
@@ -419,6 +389,7 @@ void dessinerLampadaire(float x, float y, float z, float hauteur){
     glPopMatrix();
 }
 
+// Fonction pour tracer un rail avec ses poteaux :
 void dessinerRail(Vecteur debut, Vecteur fin) {
     // On calcul l'orientation de la caméra pour ce segment :
     Vecteur delta = fin - debut;
@@ -466,6 +437,7 @@ void dessinerRail(Vecteur debut, Vecteur fin) {
 
 }
 
+// Fonction pour dessiner un poteau :
 void dessinerPoteau(float V, float r, float h, GLint s) {
     glPushMatrix();
     glRotatef(V,0,1,0); // Le poteau est tout le temps vertical !
@@ -478,6 +450,7 @@ void dessinerPoteau(float V, float r, float h, GLint s) {
     glPopMatrix();
 }
 
+// Fonction pour dessiner un donnut :
 void dessinerDonnut(float x, float y, float z) {
     glPushMatrix();
 
@@ -494,7 +467,6 @@ void dessinerDonnut(float x, float y, float z) {
 
     glPopMatrix();
 }
-
 
 
 void dessinerTexture(GLuint texture, Vecteur a, Vecteur b, Vecteur c, Vecteur d) {
