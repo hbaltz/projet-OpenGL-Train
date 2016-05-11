@@ -36,6 +36,15 @@ void dessiner() {
     }
     cam->Look();
 
+
+    // Gestion lumière :
+    glEnable (GL_LIGHTING);
+
+    GLfloat global_ambient[] = { 0.1f, 1.0f, 0.1f, 1.0f};
+    glLightModelfv(GL_LIGHT_MODEL_AMBIENT, global_ambient);
+
+    glDisable (GL_LIGHTING);
+
     // Rails :
     dessinerVoies();
 
@@ -380,6 +389,9 @@ void dessinerLampadaire(float x, float y, float z, float hauteur){
 
     glEnable (GL_LIGHTING);
     glEnable (GL_LIGHT0);
+
+    GLfloat mat_emission[] = {0.5, 0.5, 0.5, 1.0};
+    glMaterialfv(GL_FRONT, GL_EMISSION, mat_emission);
 
     GLUquadricObj *sphere;
     sphere = gluNewQuadric();
