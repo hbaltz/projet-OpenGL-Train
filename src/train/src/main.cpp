@@ -87,8 +87,6 @@ int main(int argc, char **argv) {
     collection->addTrain(Train(2, 3, 0.075, 4, &graphe)); cam->nb_train++;
 
     // On effectue la triangulation : (hors points du pont)
-    //triangulation.ajouterTriangle(Triangle(CPoint3f(), CPoint3f(), CPoint3f()));
-    //triangulation = listeTriangles(CPoint3f(-10,-10,0), CPoint3f(40,-10,0), CPoint3f(-10,40,0), CPoint3f(40,40,0));
     genererTriangulation();
 
     // Gestion des mouvement à l'aide de la souris et du clavier
@@ -131,7 +129,7 @@ void Init(){
     glLoadIdentity();
     gluPerspective(60,1.0,0.1,1000);
 
-    //glutFullScreen(); // Pour le pleine écran
+    //glutFullScreen(); // Pour le plein écran
 }
 
 void Reshape(int width, int height)
