@@ -52,5 +52,6 @@ void dessinerTexture(GLuint texture, Vecteur a, Vecteur b, Vecteur c, Vecteur d)
 void dessinerTexture(Vecteur a, Vecteur b, Vecteur c, Vecteur d);
 void dessinerTextureSansDeformation(Vecteur a, Vecteur b, Vecteur c, Vecteur d);
 void dessinerRectangle(Vecteur a1, Vecteur b1, Vecteur c1, Vecteur d1, Vecteur a2, Vecteur b2, Vecteur c2, Vecteur d2);
-void dessinerPave(Vecteur a1, Vecteur b1, Vecteur c1, Vecteur d1, Vecteur a2, Vecteur b2, Vecteur c2, Vecteur d2);
+void dessinerPave(Vecteur a1, Vecteur b1, Vecteur c1, Vecteur d1, Vecteur a2, Vecteur b2, Vecteur c2, Vecteur d2,
+                  GLuint avant, GLuint droite, GLuint derriere, GLuint gauche, GLuint haut, GLuint bas);
 void dessinerPolygone(double ray, double smooth);

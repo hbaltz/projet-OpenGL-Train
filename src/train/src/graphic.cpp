@@ -21,6 +21,14 @@ void chargerTextures() {
     sol = loadTexture("textures/sol.jpg");
     text_lune = loadTexture("textures/lune.jpg");
     lampadaire = loadTexture("textures/lampadaire.jpg");
+
+    // Texture gare :
+    avt_gare = loadTexture("textures/lampadaire.jpg");
+    der_gare = loadTexture("textures/lampadaire.jpg");
+    drt_gare = loadTexture("textures/lampadaire.jpg");
+    gce_gare = loadTexture("textures/lampadaire.jpg");
+    haut_gare = loadTexture("textures/lampadaire.jpg");
+    bas_gare = loadTexture("textures/lampadaire.jpg");
 }
 
 // Fonction principale qui va dessiner l'ensemble de notre projet :
@@ -288,7 +296,8 @@ void dessinerGare(float x, float y, float z, float t1, float t2, float h){
 
     glTranslatef(x,y,z);
 
-    dessinerPave(Vecteur(0,0,0), Vecteur(0,t2,0), Vecteur(t1,t2,0), Vecteur(t1,0,0), Vecteur(0,0,h), Vecteur(0,t2,h), Vecteur(t1,t2,h), Vecteur(t1,0,h));
+    dessinerPave(Vecteur(0,0,0), Vecteur(0,t2,0), Vecteur(t1,t2,0), Vecteur(t1,0,0), Vecteur(0,0,h), Vecteur(0,t2,h), Vecteur(t1,t2,h), Vecteur(t1,0,h),
+                  avt_gare, drt_gare, der_gare, gce_gare, haut_gare, bas_gare);
 
     glPopMatrix();
 }
@@ -301,15 +310,16 @@ void dessinerRectangle(Vecteur a1, Vecteur b1, Vecteur c1, Vecteur d1, Vecteur a
     dessinerTextureSansDeformation(c1,c2,d2,d1);
 }
 
-// Fonction pour dessinr un pavé fermé
-void dessinerPave(Vecteur a1, Vecteur b1, Vecteur c1, Vecteur d1, Vecteur a2, Vecteur b2, Vecteur c2, Vecteur d2) {
-    dessinerTextureSansDeformation(a1,b1,c1,d1);
-    dessinerTextureSansDeformation(a2,b2,c2,d2);
-    dessinerTextureSansDeformation(a1,a2,b2,b1);
-    dessinerTextureSansDeformation(c1,c2,d2,d1);
+// Fonction pour dessinr un pavé fermé avec une texture différente par face
+void dessinerPave(Vecteur a1, Vecteur b1, Vecteur c1, Vecteur d1, Vecteur a2, Vecteur b2, Vecteur c2, Vecteur d2,
+                  GLuint avant, GLuint droite, GLuint derriere, GLuint gauche, GLuint haut, GLuint bas) {
+    dessinerTexture(bas,a1,b1,c1,d1);
+    dessinerTexture(haut,a2,b2,c2,d2);
+    dessinerTexture(avant,a1,a2,b2,b1);
+    dessinerTexture(derriere,c1,c2,d2,d1);
 
-    dessinerTextureSansDeformation(a1,a2,d2,d1);
-    dessinerTextureSansDeformation(b1,c1,c2,b1);
+    dessinerTexture(gauche,a1,a2,d2,d1);
+    dessinerTexture(droite,b1,c1,c2,b2);
 }
 
 // Fonction pour tracer un sapin :

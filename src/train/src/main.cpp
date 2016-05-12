@@ -33,6 +33,7 @@ using namespace std;
 
 // Déclaration des images pour les textures :
 GLuint wagon, avt_wagon, herbe, neige, ciel, bois, feuille, pont, gravier, poutre_bois, eau, sol, text_lune, lampadaire;
+GLuint avt_gare, der_gare, drt_gare, gce_gare, haut_gare, bas_gare;
 
 // Caméra :
 Camera *cam;
