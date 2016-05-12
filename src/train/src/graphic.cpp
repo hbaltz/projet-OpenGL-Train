@@ -133,12 +133,11 @@ void dessinerVoies() {
 void dessinerArbres() {
     glColor3f(0.1,1,0.1);
 
-    //dessinerArbre(-1,5,0,2.2);
     dessinerArbre(4,3,0,2.4);
     dessinerArbre(8,14,0,1.9);
-    dessinerArbre(-1,14,0,2.2);
-    dessinerArbre(0,12,0,2.1);
-    dessinerArbre(-2.5,13.8,0,2.3);
+    dessinerArbre(-2,15,0,2.2);
+    dessinerArbre(5,12,0,2.1);
+    dessinerArbre(-5.5,13.8,0,2.3);
     dessinerArbre(2,11.7,0,2);
     dessinerArbre(15,-4,0,2.3);
     dessinerArbre(17,5,0,2.25);
@@ -458,7 +457,7 @@ void dessinerRail(Vecteur debut, Vecteur fin) {
     glRotatef(90-V,0,1,0); // Decalage selon le segment ET pour dessiner à 90°
     GLUquadricObj *tronc;
     tronc = gluNewQuadric();
-     gluCylinder(tronc,0.03,0.03,l,30,30);
+    gluCylinder(tronc,0.03,0.03,l,30,30);
     gluDeleteQuadric(tronc);
     glPopMatrix();
 

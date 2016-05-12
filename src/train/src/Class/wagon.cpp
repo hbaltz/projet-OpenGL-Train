@@ -122,8 +122,6 @@ void Wagon::drawWagon() {
 
     // Si c'est la locomotive on ajoute un cône à l'avant du cône
     if(estPremier){
-
-
         GLUquadricObj *avt;
         avt = gluNewQuadric();
         gluQuadricTexture(avt,GL_TRUE);
