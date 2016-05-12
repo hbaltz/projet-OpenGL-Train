@@ -23,12 +23,12 @@ void chargerTextures() {
     lampadaire = loadTexture("textures/lampadaire.jpg");
 
     // Texture gare :
-    avt_gare = loadTexture("textures/lampadaire.jpg");
-    der_gare = loadTexture("textures/lampadaire.jpg");
-    drt_gare = loadTexture("textures/lampadaire.jpg");
-    gce_gare = loadTexture("textures/lampadaire.jpg");
-    haut_gare = loadTexture("textures/lampadaire.jpg");
-    bas_gare = loadTexture("textures/lampadaire.jpg");
+    avt_gare = loadTexture("textures/gare.jpg");
+    der_gare = loadTexture("textures/gare.jpg");
+    drt_gare = loadTexture("textures/mur.jpg");
+    gce_gare = loadTexture("textures/entree.jpg");
+    haut_gare = loadTexture("textures/toit.jpg");
+    bas_gare = loadTexture("textures/toit.jpg");
 }
 
 // Fonction principale qui va dessiner l'ensemble de notre projet :
@@ -315,11 +315,11 @@ void dessinerPave(Vecteur a1, Vecteur b1, Vecteur c1, Vecteur d1, Vecteur a2, Ve
                   GLuint avant, GLuint droite, GLuint derriere, GLuint gauche, GLuint haut, GLuint bas) {
     dessinerTexture(bas,a1,b1,c1,d1);
     dessinerTexture(haut,a2,b2,c2,d2);
-    dessinerTexture(avant,a1,a2,b2,b1);
-    dessinerTexture(derriere,c1,c2,d2,d1);
+    dessinerTexture(avant,b1,b2,a2,a1);
+    dessinerTexture(derriere,d1,d2,c2,c1);
 
     dessinerTexture(gauche,a1,a2,d2,d1);
-    dessinerTexture(droite,b1,c1,c2,b2);
+    dessinerTexture(droite,c1,c2,b2,b1);
 }
 
 // Fonction pour tracer un sapin :
