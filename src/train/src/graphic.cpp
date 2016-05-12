@@ -487,6 +487,23 @@ void dessinerDonnut(float x, float y, float z) {
     glPopMatrix();
 }
 
+// Fonction pour tracer des polygones les typse sont précisé ci-dessous :
+void dessinerPolygone(double ray, double smooth){
+    glBegin(GL_POLYGON);
+    // Lorsque que smooth = :
+    //        - 1.5 : Dessine un Triangle
+    //        -  2  : Dessine un carré
+    //        -  3  : Dessine un hexagone
+    //        -  4  : Dessine un octagone
+    //        -  5  : Dessine un decagone
+    //        -  >6 : Dessine un cercle
+    for(double i = 0; i < 2 * M_PI; i += M_PI / smooth)
+        glVertex3f(cos(i) * ray, sin(i) * ray, 0.0);
+
+    glEnd();
+
+}
+
 
 void dessinerTexture(GLuint texture, Vecteur a, Vecteur b, Vecteur c, Vecteur d) {
     // Dessin de la texture avec initialisation
