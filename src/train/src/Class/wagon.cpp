@@ -116,11 +116,13 @@ void Wagon::drawWagon() {
     gluCylinder(wag,0.15,0.15,0.9,100,100);
     gluDeleteQuadric(wag);
 
+    dessinerPolygone(0.15, 12);
+
+    glTranslatef(0, 0, 0.9);
 
     // Si c'est la locomotive on ajoute un cône à l'avant du cône
-
     if(estPremier){
-        glTranslatef(0, 0, 0.9);
+
 
         GLUquadricObj *avt;
         avt = gluNewQuadric();
@@ -128,10 +130,9 @@ void Wagon::drawWagon() {
         glBindTexture(GL_TEXTURE_2D, avt_wagon);
         gluCylinder(avt,0.15,0,0.4,100,100);
         gluDeleteQuadric(avt);
-
     }
 
-    glDisable(GL_TEXTURE_2D);
+    dessinerPolygone(0.15, 12);
 
     glPopMatrix();
 }
