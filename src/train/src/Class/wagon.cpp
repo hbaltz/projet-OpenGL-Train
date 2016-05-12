@@ -37,6 +37,8 @@ Wagon::Wagon(int _IDW, int _IDA, CGraphe *_graphe, float _speed) {
     if(IDW==0) D = 1;
     speed = _speed;
 
+    estPremier = false;
+
     posIni = new Vecteur(graphe->list_sommet[IDSI].X,graphe->list_sommet[IDSI].Y,graphe->list_sommet[IDSI].Z);
     posVers = new Vecteur(0,0,0);
 
@@ -93,6 +95,7 @@ void Wagon::changeTroncon() {
 }
 
 void Wagon::drawWagon() {
+    // On s'est inspiré de l'hyperloop, on dessine donc des cylindres
     glPushMatrix();
     glColor3d(1, 1, 1);
 
@@ -101,16 +104,34 @@ void Wagon::drawWagon() {
     glRotatef(90-H, 0, 0, 1);
     glRotatef(-V, 0, 1, 0);
     glTranslatef(D, 0, 0.30);
+    glRotated(90,0,1,0);
 
     glColor3d(1,1,1);
     glEnable(GL_TEXTURE_2D);
-    glRotated(90,0,1,0);
+
     GLUquadricObj *wag;
     wag = gluNewQuadric();
     gluQuadricTexture(wag,GL_TRUE);
     glBindTexture(GL_TEXTURE_2D, wagon);
     gluCylinder(wag,0.15,0.15,0.9,100,100);
     gluDeleteQuadric(wag);
+
+
+    // Si c'est la locomotive on ajoute un cône à l'avant du cône
+
+    if(estPremier){
+        glTranslatef(0, 0, 0.9);
+
+        GLUquadricObj *avt;
+        avt = gluNewQuadric();
+        gluQuadricTexture(avt,GL_TRUE);
+        glBindTexture(GL_TEXTURE_2D, avt_wagon);
+        gluCylinder(avt,0.15,0,0.4,100,100);
+        gluDeleteQuadric(avt);
+
+    }
+
+    glDisable(GL_TEXTURE_2D);
 
     glPopMatrix();
 }

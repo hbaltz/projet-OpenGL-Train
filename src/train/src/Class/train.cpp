@@ -18,6 +18,8 @@ Train::Train(int _IDT, int _NBW, float _speed, int _IDA, CGraphe *_graphe) {
             wag.changeTroncon();
             wag.D = D-Dmax_temp;
         } else {wag.D = (_NBW - _IDW) * LONG_WAG;}
+        // On met le boolean estPremier à vrai si c'est la locomotive (premier train ajouté)
+        if(_IDW == 0){wag.estPremier = true;}
         wagons.push_back(wag);
     }
     NBW = _NBW;

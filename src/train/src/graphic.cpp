@@ -8,6 +8,7 @@
 // Fonction qui va cherger les différentes textures utiles pour le projet :
 void chargerTextures() {
     wagon = loadTexture("textures/wagon.jpg");
+    avt_wagon = loadTexture("textures/avt_wagon.jpg");
     herbe = loadTexture("textures/grass.jpg");
     neige = loadTexture("textures/snow.jpg");
     ciel  = loadTexture("textures/ciel.jpg");
