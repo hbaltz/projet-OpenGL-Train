@@ -25,7 +25,7 @@ class Wagon {
         float H,V;          // Orientation
         float speed;        // Vitesse
         float D,Dmax;       // Distance aux prochain point annexe
-        bool estPremier;    // Vrai si le wagon est la locomotive (preiier du train)
+        bool estPremier;    // Vrai si le wagon est la locomotive (premier du train)
         Vecteur *posIni;    // Position du premier point du troncon
         Vecteur *posVers;   // Position du premier point du troncon
         CGraphe *graphe;
